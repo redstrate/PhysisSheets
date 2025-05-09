@@ -1,0 +1,140 @@
+#![allow(warnings)]
+/// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
+use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::EXH, common::Language};
+pub struct NpcEquip {
+exd: EXD,
+exh: EXH,
+}
+impl NpcEquip {
+pub fn read_from(game_data: &mut GameData, language: Language) -> Self {
+let exh = game_data.read_excel_sheet_header("NpcEquip").unwrap();let exd = game_data.read_excel_sheet("NpcEquip", &exh, language, 0).unwrap();Self {
+exh,
+exd,
+}
+}
+pub fn get_row(&self, id: u32) -> NpcEquipRow {let ExcelRowKind::SingleRow(row) = &self.exd.get_row(id).unwrap() else { panic!("Expected a single row!"); };
+NpcEquipRow { columns: row.columns.clone() }
+}
+}
+pub struct NpcEquipRow {
+columns: Vec<ColumnData>,
+}
+impl NpcEquipRow {
+pub fn ModelMainHand(&self) -> &ColumnData {
+&self.columns[0]
+}
+pub fn ModelOffHand(&self) -> &ColumnData {
+&self.columns[1]
+}
+pub fn ModelHead(&self) -> &ColumnData {
+&self.columns[2]
+}
+pub fn ModelBody(&self) -> &ColumnData {
+&self.columns[3]
+}
+pub fn ModelHands(&self) -> &ColumnData {
+&self.columns[4]
+}
+pub fn ModelLegs(&self) -> &ColumnData {
+&self.columns[5]
+}
+pub fn ModelFeet(&self) -> &ColumnData {
+&self.columns[6]
+}
+pub fn ModelEars(&self) -> &ColumnData {
+&self.columns[7]
+}
+pub fn ModelNeck(&self) -> &ColumnData {
+&self.columns[8]
+}
+pub fn ModelWrists(&self) -> &ColumnData {
+&self.columns[9]
+}
+pub fn ModelLeftRing(&self) -> &ColumnData {
+&self.columns[10]
+}
+pub fn ModelRightRing(&self) -> &ColumnData {
+&self.columns[11]
+}
+pub fn Unknown_70_1(&self) -> &ColumnData {
+&self.columns[12]
+}
+pub fn Unknown_70_2(&self) -> &ColumnData {
+&self.columns[13]
+}
+pub fn DyeMainHand(&self) -> &ColumnData {
+&self.columns[14]
+}
+pub fn Dye2MainHand(&self) -> &ColumnData {
+&self.columns[15]
+}
+pub fn DyeOffHand(&self) -> &ColumnData {
+&self.columns[16]
+}
+pub fn Dye2OffHand(&self) -> &ColumnData {
+&self.columns[17]
+}
+pub fn DyeHead(&self) -> &ColumnData {
+&self.columns[18]
+}
+pub fn DyeBody(&self) -> &ColumnData {
+&self.columns[19]
+}
+pub fn DyeHands(&self) -> &ColumnData {
+&self.columns[20]
+}
+pub fn DyeLegs(&self) -> &ColumnData {
+&self.columns[21]
+}
+pub fn DyeFeet(&self) -> &ColumnData {
+&self.columns[22]
+}
+pub fn DyeEars(&self) -> &ColumnData {
+&self.columns[23]
+}
+pub fn DyeNeck(&self) -> &ColumnData {
+&self.columns[24]
+}
+pub fn DyeWrists(&self) -> &ColumnData {
+&self.columns[25]
+}
+pub fn DyeLeftRing(&self) -> &ColumnData {
+&self.columns[26]
+}
+pub fn DyeRightRing(&self) -> &ColumnData {
+&self.columns[27]
+}
+pub fn Dye2Head(&self) -> &ColumnData {
+&self.columns[28]
+}
+pub fn Dye2Body(&self) -> &ColumnData {
+&self.columns[29]
+}
+pub fn Dye2Hands(&self) -> &ColumnData {
+&self.columns[30]
+}
+pub fn Dye2Legs(&self) -> &ColumnData {
+&self.columns[31]
+}
+pub fn Dye2Feet(&self) -> &ColumnData {
+&self.columns[32]
+}
+pub fn Dye2Ears(&self) -> &ColumnData {
+&self.columns[33]
+}
+pub fn Dye2Neck(&self) -> &ColumnData {
+&self.columns[34]
+}
+pub fn Dye2Wrists(&self) -> &ColumnData {
+&self.columns[35]
+}
+pub fn Dye2LeftRing(&self) -> &ColumnData {
+&self.columns[36]
+}
+pub fn Dye2RightRing(&self) -> &ColumnData {
+&self.columns[37]
+}
+pub fn Visor(&self) -> &ColumnData {
+&self.columns[38]
+}
+}

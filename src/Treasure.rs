@@ -1,0 +1,59 @@
+#![allow(warnings)]
+/// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
+use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::EXH, common::Language};
+pub struct Treasure {
+exd: EXD,
+exh: EXH,
+}
+impl Treasure {
+pub fn read_from(game_data: &mut GameData, language: Language) -> Self {
+let exh = game_data.read_excel_sheet_header("Treasure").unwrap();let exd = game_data.read_excel_sheet("Treasure", &exh, language, 0).unwrap();Self {
+exh,
+exd,
+}
+}
+pub fn get_row(&self, id: u32) -> TreasureRow {let ExcelRowKind::SingleRow(row) = &self.exd.get_row(id).unwrap() else { panic!("Expected a single row!"); };
+TreasureRow { columns: row.columns.clone() }
+}
+}
+pub struct TreasureRow {
+columns: Vec<ColumnData>,
+}
+impl TreasureRow {
+pub fn Unknown0(&self) -> &ColumnData {
+&self.columns[0]
+}
+pub fn Unknown1(&self) -> &ColumnData {
+&self.columns[1]
+}
+pub fn Unknown2(&self) -> &ColumnData {
+&self.columns[2]
+}
+pub fn Unknown3(&self) -> &ColumnData {
+&self.columns[3]
+}
+pub fn Unknown4(&self) -> &ColumnData {
+&self.columns[4]
+}
+pub fn Unknown5(&self) -> &ColumnData {
+&self.columns[5]
+}
+pub fn Unknown6(&self) -> &ColumnData {
+&self.columns[6]
+}
+pub fn Unknown7(&self) -> &ColumnData {
+&self.columns[7]
+}
+pub fn SGB(&self) -> &ColumnData {
+&self.columns[8]
+}
+pub fn Unknown_70(&self) -> &ColumnData {
+&self.columns[9]
+}
+pub fn Unknown8(&self) -> &ColumnData {
+&self.columns[10]
+}
+pub fn Unknown9(&self) -> &ColumnData {
+&self.columns[11]
+}
+}

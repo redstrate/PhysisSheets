@@ -1,0 +1,50 @@
+#![allow(warnings)]
+/// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
+use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::EXH, common::Language};
+pub struct GatheringLeve {
+exd: EXD,
+exh: EXH,
+}
+impl GatheringLeve {
+pub fn read_from(game_data: &mut GameData, language: Language) -> Self {
+let exh = game_data.read_excel_sheet_header("GatheringLeve").unwrap();let exd = game_data.read_excel_sheet("GatheringLeve", &exh, language, 0).unwrap();Self {
+exh,
+exd,
+}
+}
+pub fn get_row(&self, id: u32) -> GatheringLeveRow {let ExcelRowKind::SingleRow(row) = &self.exd.get_row(id).unwrap() else { panic!("Expected a single row!"); };
+GatheringLeveRow { columns: row.columns.clone() }
+}
+}
+pub struct GatheringLeveRow {
+columns: Vec<ColumnData>,
+}
+impl GatheringLeveRow {
+pub fn Route(&self) -> &ColumnData {
+&self.columns[0]
+}
+pub fn RequiredItem(&self) -> &ColumnData {
+&self.columns[1]
+}
+pub fn Rule(&self) -> &ColumnData {
+&self.columns[2]
+}
+pub fn BNpcEntry(&self) -> &ColumnData {
+&self.columns[3]
+}
+pub fn Objective(&self) -> &ColumnData {
+&self.columns[4]
+}
+pub fn RequiredItemQuantity(&self) -> &ColumnData {
+&self.columns[5]
+}
+pub fn ItemNumber(&self) -> &ColumnData {
+&self.columns[6]
+}
+pub fn Varient(&self) -> &ColumnData {
+&self.columns[7]
+}
+pub fn UseSecondaryTool(&self) -> &ColumnData {
+&self.columns[8]
+}
+}

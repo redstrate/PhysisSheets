@@ -1,0 +1,59 @@
+#![allow(warnings)]
+/// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
+use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::EXH, common::Language};
+pub struct SpearfishingNotebook {
+exd: EXD,
+exh: EXH,
+}
+impl SpearfishingNotebook {
+pub fn read_from(game_data: &mut GameData, language: Language) -> Self {
+let exh = game_data.read_excel_sheet_header("SpearfishingNotebook").unwrap();let exd = game_data.read_excel_sheet("SpearfishingNotebook", &exh, language, 0).unwrap();Self {
+exh,
+exd,
+}
+}
+pub fn get_row(&self, id: u32) -> SpearfishingNotebookRow {let ExcelRowKind::SingleRow(row) = &self.exd.get_row(id).unwrap() else { panic!("Expected a single row!"); };
+SpearfishingNotebookRow { columns: row.columns.clone() }
+}
+}
+pub struct SpearfishingNotebookRow {
+columns: Vec<ColumnData>,
+}
+impl SpearfishingNotebookRow {
+pub fn TerritoryType(&self) -> &ColumnData {
+&self.columns[0]
+}
+pub fn Radius(&self) -> &ColumnData {
+&self.columns[1]
+}
+pub fn PlaceName(&self) -> &ColumnData {
+&self.columns[2]
+}
+pub fn GatheringPointBase(&self) -> &ColumnData {
+&self.columns[3]
+}
+pub fn Unknown0(&self) -> &ColumnData {
+&self.columns[4]
+}
+pub fn Unknown1(&self) -> &ColumnData {
+&self.columns[5]
+}
+pub fn X(&self) -> &ColumnData {
+&self.columns[6]
+}
+pub fn Y(&self) -> &ColumnData {
+&self.columns[7]
+}
+pub fn GatheringLevel(&self) -> &ColumnData {
+&self.columns[8]
+}
+pub fn Unknown2(&self) -> &ColumnData {
+&self.columns[9]
+}
+pub fn Unknown3(&self) -> &ColumnData {
+&self.columns[10]
+}
+pub fn IsShadowNode(&self) -> &ColumnData {
+&self.columns[11]
+}
+}

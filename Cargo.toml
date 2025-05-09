@@ -1,0 +1,10 @@
+[package]
+name = "physis-sheets"
+edition = "2024"
+
+[features]
+default = ["Item"]
+Item = []
+
+[dependencies]
+physis = { git = "https://github.com/redstrate/physis" }

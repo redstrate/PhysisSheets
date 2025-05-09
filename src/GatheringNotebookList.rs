@@ -1,0 +1,29 @@
+#![allow(warnings)]
+/// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
+use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::EXH, common::Language};
+pub struct GatheringNotebookList {
+exd: EXD,
+exh: EXH,
+}
+impl GatheringNotebookList {
+pub fn read_from(game_data: &mut GameData, language: Language) -> Self {
+let exh = game_data.read_excel_sheet_header("GatheringNotebookList").unwrap();let exd = game_data.read_excel_sheet("GatheringNotebookList", &exh, language, 0).unwrap();Self {
+exh,
+exd,
+}
+}
+pub fn get_row(&self, id: u32) -> GatheringNotebookListRow {let ExcelRowKind::SingleRow(row) = &self.exd.get_row(id).unwrap() else { panic!("Expected a single row!"); };
+GatheringNotebookListRow { columns: row.columns.clone() }
+}
+}
+pub struct GatheringNotebookListRow {
+columns: Vec<ColumnData>,
+}
+impl GatheringNotebookListRow {
+pub fn GatheringItem(&self) -> &ColumnData {
+&self.columns[0]
+}
+pub fn Unknown0(&self) -> &ColumnData {
+&self.columns[1]
+}
+}
