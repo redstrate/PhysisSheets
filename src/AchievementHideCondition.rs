@@ -6,18 +6,19 @@ exd: EXD,
 exh: EXH,
 }
 impl AchievementHideCondition {
-pub fn read_from(game_data: &mut GameData, language: Language) -> Self {
-let exh = game_data.read_excel_sheet_header("AchievementHideCondition").unwrap();let exd = game_data.read_excel_sheet("AchievementHideCondition", &exh, language, 0).unwrap();Self {
+pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
+let exh = game_data.read_excel_sheet_header("AchievementHideCondition")?;let exd = game_data.read_excel_sheet("AchievementHideCondition", &exh, language, 0)?;Some(Self {
 exh,
 exd,
+})
 }
-}
-pub fn get_row(&self, id: u32) -> AchievementHideConditionRow {let ExcelRowKind::SingleRow(row) = &self.exd.get_row(id).unwrap() else { panic!("Expected a single row!"); };
+pub fn get_row(&self, id: u32) -> Option<AchievementHideConditionRow> {
+let Some(ExcelRowKind::SingleRow(row)) = &self.exd.get_row(id) else { return None; };
 let column_defs = &self.exh.column_definitions;
 let mut zipped: Vec<_> = row.columns.clone().into_iter().zip(column_defs).collect();
 zipped.sort_by(|(_, a_col), (_, b_col)| a_col.offset.cmp(&b_col.offset));
 let (columns, _): (Vec<ColumnData>, Vec<ExcelColumnDefinition> ) = zipped.into_iter().unzip();
-AchievementHideConditionRow { columns }
+Some(AchievementHideConditionRow { columns })
 }
 }
 pub struct AchievementHideConditionRow {

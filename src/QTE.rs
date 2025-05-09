@@ -6,18 +6,19 @@ exd: EXD,
 exh: EXH,
 }
 impl QTE {
-pub fn read_from(game_data: &mut GameData, language: Language) -> Self {
-let exh = game_data.read_excel_sheet_header("QTE").unwrap();let exd = game_data.read_excel_sheet("QTE", &exh, language, 0).unwrap();Self {
+pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
+let exh = game_data.read_excel_sheet_header("QTE")?;let exd = game_data.read_excel_sheet("QTE", &exh, language, 0)?;Some(Self {
 exh,
 exd,
+})
 }
-}
-pub fn get_row(&self, id: u32) -> QTERow {let ExcelRowKind::SingleRow(row) = &self.exd.get_row(id).unwrap() else { panic!("Expected a single row!"); };
+pub fn get_row(&self, id: u32) -> Option<QTERow> {
+let Some(ExcelRowKind::SingleRow(row)) = &self.exd.get_row(id) else { return None; };
 let column_defs = &self.exh.column_definitions;
 let mut zipped: Vec<_> = row.columns.clone().into_iter().zip(column_defs).collect();
 zipped.sort_by(|(_, a_col), (_, b_col)| a_col.offset.cmp(&b_col.offset));
 let (columns, _): (Vec<ColumnData>, Vec<ExcelColumnDefinition> ) = zipped.into_iter().unzip();
-QTERow { columns }
+Some(QTERow { columns })
 }
 }
 pub struct QTERow {

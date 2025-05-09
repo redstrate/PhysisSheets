@@ -6,18 +6,19 @@ exd: EXD,
 exh: EXH,
 }
 impl LogMessage {
-pub fn read_from(game_data: &mut GameData, language: Language) -> Self {
-let exh = game_data.read_excel_sheet_header("LogMessage").unwrap();let exd = game_data.read_excel_sheet("LogMessage", &exh, language, 0).unwrap();Self {
+pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
+let exh = game_data.read_excel_sheet_header("LogMessage")?;let exd = game_data.read_excel_sheet("LogMessage", &exh, language, 0)?;Some(Self {
 exh,
 exd,
+})
 }
-}
-pub fn get_row(&self, id: u32) -> LogMessageRow {let ExcelRowKind::SingleRow(row) = &self.exd.get_row(id).unwrap() else { panic!("Expected a single row!"); };
+pub fn get_row(&self, id: u32) -> Option<LogMessageRow> {
+let Some(ExcelRowKind::SingleRow(row)) = &self.exd.get_row(id) else { return None; };
 let column_defs = &self.exh.column_definitions;
 let mut zipped: Vec<_> = row.columns.clone().into_iter().zip(column_defs).collect();
 zipped.sort_by(|(_, a_col), (_, b_col)| a_col.offset.cmp(&b_col.offset));
 let (columns, _): (Vec<ColumnData>, Vec<ExcelColumnDefinition> ) = zipped.into_iter().unzip();
-LogMessageRow { columns }
+Some(LogMessageRow { columns })
 }
 }
 pub struct LogMessageRow {
