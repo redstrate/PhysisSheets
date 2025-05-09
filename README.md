@@ -1,8 +1,9 @@
 # Physis Sheets
 
-This is an auto-generated library for Rust, based on [EXDSchema] and [Physis]. The generator is located [here].
+This is an auto-generated library for Rust, based on [EXDSchema](https://github.com/xivdev/EXDSchema/) and [Physis](https://github.com/redstrate/physis). The generator is located [here](https://github.com/redstrate/NEXGen).
 
 **Applicable Game Version**: `2025.04.16.0000.0000`.
+**NOTE:** This is still a WIP, the full schema is not supported yet nor is the API finalized.
 
 ## Usage
 
