@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct DisposalShopItem {
+pub struct DisposalShopItemSheet {
 exd: EXD,
 exh: EXH,
 }
-impl DisposalShopItem {
+impl DisposalShopItemSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("DisposalShopItem")?;let exd = game_data.read_excel_sheet("DisposalShopItem", &exh, language, 0)?;Some(Self {
 exh,

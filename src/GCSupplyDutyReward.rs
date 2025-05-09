@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct GCSupplyDutyReward {
+pub struct GCSupplyDutyRewardSheet {
 exd: EXD,
 exh: EXH,
 }
-impl GCSupplyDutyReward {
+impl GCSupplyDutyRewardSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("GCSupplyDutyReward")?;let exd = game_data.read_excel_sheet("GCSupplyDutyReward", &exh, language, 0)?;Some(Self {
 exh,

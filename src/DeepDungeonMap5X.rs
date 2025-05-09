@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct DeepDungeonMap5X {
+pub struct DeepDungeonMap5XSheet {
 exd: EXD,
 exh: EXH,
 }
-impl DeepDungeonMap5X {
+impl DeepDungeonMap5XSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("DeepDungeonMap5X")?;let exd = game_data.read_excel_sheet("DeepDungeonMap5X", &exh, language, 0)?;Some(Self {
 exh,

@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct LeveRewardItemGroup {
+pub struct LeveRewardItemGroupSheet {
 exd: EXD,
 exh: EXH,
 }
-impl LeveRewardItemGroup {
+impl LeveRewardItemGroupSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("LeveRewardItemGroup")?;let exd = game_data.read_excel_sheet("LeveRewardItemGroup", &exh, language, 0)?;Some(Self {
 exh,

@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct RideShootingTextData {
+pub struct RideShootingTextDataSheet {
 exd: EXD,
 exh: EXH,
 }
-impl RideShootingTextData {
+impl RideShootingTextDataSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("RideShootingTextData")?;let exd = game_data.read_excel_sheet("RideShootingTextData", &exh, language, 0)?;Some(Self {
 exh,

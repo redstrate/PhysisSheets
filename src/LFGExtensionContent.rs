@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct LFGExtensionContent {
+pub struct LFGExtensionContentSheet {
 exd: EXD,
 exh: EXH,
 }
-impl LFGExtensionContent {
+impl LFGExtensionContentSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("LFGExtensionContent")?;let exd = game_data.read_excel_sheet("LFGExtensionContent", &exh, language, 0)?;Some(Self {
 exh,

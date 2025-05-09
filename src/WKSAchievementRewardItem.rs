@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct WKSAchievementRewardItem {
+pub struct WKSAchievementRewardItemSheet {
 exd: EXD,
 exh: EXH,
 }
-impl WKSAchievementRewardItem {
+impl WKSAchievementRewardItemSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("WKSAchievementRewardItem")?;let exd = game_data.read_excel_sheet("WKSAchievementRewardItem", &exh, language, 0)?;Some(Self {
 exh,

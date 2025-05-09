@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct QuestAcceptAdditionCondition {
+pub struct QuestAcceptAdditionConditionSheet {
 exd: EXD,
 exh: EXH,
 }
-impl QuestAcceptAdditionCondition {
+impl QuestAcceptAdditionConditionSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("QuestAcceptAdditionCondition")?;let exd = game_data.read_excel_sheet("QuestAcceptAdditionCondition", &exh, language, 0)?;Some(Self {
 exh,

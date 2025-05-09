@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct Warp {
+pub struct WarpSheet {
 exd: EXD,
 exh: EXH,
 }
-impl Warp {
+impl WarpSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("Warp")?;let exd = game_data.read_excel_sheet("Warp", &exh, language, 0)?;Some(Self {
 exh,

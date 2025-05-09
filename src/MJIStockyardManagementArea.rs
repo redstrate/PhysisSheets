@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct MJIStockyardManagementArea {
+pub struct MJIStockyardManagementAreaSheet {
 exd: EXD,
 exh: EXH,
 }
-impl MJIStockyardManagementArea {
+impl MJIStockyardManagementAreaSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("MJIStockyardManagementArea")?;let exd = game_data.read_excel_sheet("MJIStockyardManagementArea", &exh, language, 0)?;Some(Self {
 exh,

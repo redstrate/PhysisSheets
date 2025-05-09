@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct CycleTime {
+pub struct CycleTimeSheet {
 exd: EXD,
 exh: EXH,
 }
-impl CycleTime {
+impl CycleTimeSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("CycleTime")?;let exd = game_data.read_excel_sheet("CycleTime", &exh, language, 0)?;Some(Self {
 exh,

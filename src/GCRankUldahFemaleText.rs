@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct GCRankUldahFemaleText {
+pub struct GCRankUldahFemaleTextSheet {
 exd: EXD,
 exh: EXH,
 }
-impl GCRankUldahFemaleText {
+impl GCRankUldahFemaleTextSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("GCRankUldahFemaleText")?;let exd = game_data.read_excel_sheet("GCRankUldahFemaleText", &exh, language, 0)?;Some(Self {
 exh,

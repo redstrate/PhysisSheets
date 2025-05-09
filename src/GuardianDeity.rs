@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct GuardianDeity {
+pub struct GuardianDeitySheet {
 exd: EXD,
 exh: EXH,
 }
-impl GuardianDeity {
+impl GuardianDeitySheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("GuardianDeity")?;let exd = game_data.read_excel_sheet("GuardianDeity", &exh, language, 0)?;Some(Self {
 exh,

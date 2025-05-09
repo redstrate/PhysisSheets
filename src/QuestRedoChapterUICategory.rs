@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct QuestRedoChapterUICategory {
+pub struct QuestRedoChapterUICategorySheet {
 exd: EXD,
 exh: EXH,
 }
-impl QuestRedoChapterUICategory {
+impl QuestRedoChapterUICategorySheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("QuestRedoChapterUICategory")?;let exd = game_data.read_excel_sheet("QuestRedoChapterUICategory", &exh, language, 0)?;Some(Self {
 exh,

@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct QuestCustomTodo {
+pub struct QuestCustomTodoSheet {
 exd: EXD,
 exh: EXH,
 }
-impl QuestCustomTodo {
+impl QuestCustomTodoSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("QuestCustomTodo")?;let exd = game_data.read_excel_sheet("QuestCustomTodo", &exh, language, 0)?;Some(Self {
 exh,

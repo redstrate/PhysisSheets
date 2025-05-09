@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct Relic3Rate {
+pub struct Relic3RateSheet {
 exd: EXD,
 exh: EXH,
 }
-impl Relic3Rate {
+impl Relic3RateSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("Relic3Rate")?;let exd = game_data.read_excel_sheet("Relic3Rate", &exh, language, 0)?;Some(Self {
 exh,

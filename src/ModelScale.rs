@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct ModelScale {
+pub struct ModelScaleSheet {
 exd: EXD,
 exh: EXH,
 }
-impl ModelScale {
+impl ModelScaleSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("ModelScale")?;let exd = game_data.read_excel_sheet("ModelScale", &exh, language, 0)?;Some(Self {
 exh,

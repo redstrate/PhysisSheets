@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct InclusionShopWelcomText {
+pub struct InclusionShopWelcomTextSheet {
 exd: EXD,
 exh: EXH,
 }
-impl InclusionShopWelcomText {
+impl InclusionShopWelcomTextSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("InclusionShopWelcomText")?;let exd = game_data.read_excel_sheet("InclusionShopWelcomText", &exh, language, 0)?;Some(Self {
 exh,

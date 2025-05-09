@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct GcArmyExpeditionType {
+pub struct GcArmyExpeditionTypeSheet {
 exd: EXD,
 exh: EXH,
 }
-impl GcArmyExpeditionType {
+impl GcArmyExpeditionTypeSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("GcArmyExpeditionType")?;let exd = game_data.read_excel_sheet("GcArmyExpeditionType", &exh, language, 0)?;Some(Self {
 exh,

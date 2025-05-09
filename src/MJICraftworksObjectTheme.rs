@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct MJICraftworksObjectTheme {
+pub struct MJICraftworksObjectThemeSheet {
 exd: EXD,
 exh: EXH,
 }
-impl MJICraftworksObjectTheme {
+impl MJICraftworksObjectThemeSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("MJICraftworksObjectTheme")?;let exd = game_data.read_excel_sheet("MJICraftworksObjectTheme", &exh, language, 0)?;Some(Self {
 exh,

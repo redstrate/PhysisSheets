@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct GathererCrafterLvAdjustTable {
+pub struct GathererCrafterLvAdjustTableSheet {
 exd: EXD,
 exh: EXH,
 }
-impl GathererCrafterLvAdjustTable {
+impl GathererCrafterLvAdjustTableSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("GathererCrafterLvAdjustTable")?;let exd = game_data.read_excel_sheet("GathererCrafterLvAdjustTable", &exh, language, 0)?;Some(Self {
 exh,

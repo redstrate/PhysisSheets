@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct CraftType {
+pub struct CraftTypeSheet {
 exd: EXD,
 exh: EXH,
 }
-impl CraftType {
+impl CraftTypeSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("CraftType")?;let exd = game_data.read_excel_sheet("CraftType", &exh, language, 0)?;Some(Self {
 exh,

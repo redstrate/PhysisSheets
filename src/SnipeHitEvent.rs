@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct SnipeHitEvent {
+pub struct SnipeHitEventSheet {
 exd: EXD,
 exh: EXH,
 }
-impl SnipeHitEvent {
+impl SnipeHitEventSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("SnipeHitEvent")?;let exd = game_data.read_excel_sheet("SnipeHitEvent", &exh, language, 0)?;Some(Self {
 exh,

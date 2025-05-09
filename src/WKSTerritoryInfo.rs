@@ -1,11 +1,11 @@
 #![allow(warnings)]
 /// This file is auto-generated! It is generated from schema from https://github.com/xivdev/EXDSchema.
 use physis::{gamedata::GameData, exd::{EXD, ColumnData, ExcelRowKind}, exh::{EXH, ExcelColumnDefinition}, common::Language};
-pub struct WKSTerritoryInfo {
+pub struct WKSTerritoryInfoSheet {
 exd: EXD,
 exh: EXH,
 }
-impl WKSTerritoryInfo {
+impl WKSTerritoryInfoSheet {
 pub fn read_from(game_data: &mut GameData, language: Language) -> Option<Self> {
 let exh = game_data.read_excel_sheet_header("WKSTerritoryInfo")?;let exd = game_data.read_excel_sheet("WKSTerritoryInfo", &exh, language, 0)?;Some(Self {
 exh,
