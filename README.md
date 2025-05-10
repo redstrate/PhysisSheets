@@ -11,14 +11,14 @@ Include it in your `Cargo.toml`:
 
 ```toml
 [dependencies]
-physis-sheets = { git = "https://github.com/redstrate/PhysisSheets", no-default-features = true }
+physis-sheets = { git = "https://github.com/redstrate/PhysisSheets", branch = "2025.04.16.0000.0000", default-features = false }
 ```
 
 By default, **all sheets are included**. For most situations you will not want that[^1], hence `no-default-features` above. Instead, include the sheets you actually need:
 
 ```toml
 [dependencies]
-physis-sheets = { git = "https://github.com/redstrate/PhysisSheets", features = ["Item"], no-default-features = true }
+physis-sheets = { git = "https://github.com/redstrate/PhysisSheets", branch= "2025.04.16.0000.0000", features = ["Item"], default-features = false }
 ```
 
 Then include the sheet and use it!
