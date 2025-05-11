@@ -28,28 +28,28 @@ impl GatheringPointRow {
 pub fn GatheringPointBase(&self) -> &ColumnData {
 &self.columns[0]
 }
-pub fn GatheringPointBonus(&self) -> &ColumnData {
-&self.columns[1]
+pub fn GatheringPointBonus(&self) -> [&ColumnData; 2] {
+[&self.columns[1],&self.columns[2],]
 }
 pub fn TerritoryType(&self) -> &ColumnData {
-&self.columns[2]
-}
-pub fn PlaceName(&self) -> &ColumnData {
 &self.columns[3]
 }
-pub fn GatheringSubCategory(&self) -> &ColumnData {
+pub fn PlaceName(&self) -> &ColumnData {
 &self.columns[4]
 }
-pub fn Type(&self) -> &ColumnData {
+pub fn GatheringSubCategory(&self) -> &ColumnData {
 &self.columns[5]
 }
-pub fn Unknown0(&self) -> &ColumnData {
+pub fn Type(&self) -> &ColumnData {
 &self.columns[6]
 }
-pub fn Count(&self) -> &ColumnData {
+pub fn Unknown0(&self) -> &ColumnData {
 &self.columns[7]
 }
-pub fn Unknown1(&self) -> &ColumnData {
+pub fn Count(&self) -> &ColumnData {
 &self.columns[8]
+}
+pub fn Unknown1(&self) -> &ColumnData {
+&self.columns[9]
 }
 }

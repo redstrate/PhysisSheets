@@ -25,19 +25,19 @@ pub struct HugeCraftworksNpcRow {
 columns: Vec<ColumnData>,
 }
 impl HugeCraftworksNpcRow {
-pub fn HugeCraftworksTurnInParam(&self) -> &ColumnData {
-&self.columns[0]
+pub fn HugeCraftworksTurnInParam(&self) -> [&ColumnData; 6] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],]
 }
-pub fn HugeCraftworksRewardParam(&self) -> &ColumnData {
-&self.columns[1]
+pub fn HugeCraftworksRewardParam(&self) -> [&ColumnData; 6] {
+[&self.columns[6],&self.columns[7],&self.columns[8],&self.columns[9],&self.columns[10],&self.columns[11],]
 }
 pub fn Transient(&self) -> &ColumnData {
-&self.columns[2]
+&self.columns[12]
 }
 pub fn EventNpc(&self) -> &ColumnData {
-&self.columns[3]
+&self.columns[13]
 }
 pub fn ClassJobCategory(&self) -> &ColumnData {
-&self.columns[4]
+&self.columns[14]
 }
 }

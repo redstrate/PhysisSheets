@@ -31,10 +31,10 @@ pub fn Unknown0(&self) -> &ColumnData {
 pub fn Unknown1(&self) -> &ColumnData {
 &self.columns[1]
 }
-pub fn Action(&self) -> &ColumnData {
-&self.columns[2]
+pub fn Action(&self) -> [&ColumnData; 2] {
+[&self.columns[2],&self.columns[3],]
 }
 pub fn Unknown2(&self) -> &ColumnData {
-&self.columns[3]
+&self.columns[4]
 }
 }

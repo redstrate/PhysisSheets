@@ -34,10 +34,10 @@ pub fn MaxTotalStats(&self) -> &ColumnData {
 pub fn MaxEachStat(&self) -> &ColumnData {
 &self.columns[2]
 }
-pub fn BaseParam(&self) -> &ColumnData {
-&self.columns[3]
+pub fn BaseParam(&self) -> [&ColumnData; 4] {
+[&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],]
 }
 pub fn Unknown0(&self) -> &ColumnData {
-&self.columns[4]
+&self.columns[7]
 }
 }

@@ -25,13 +25,13 @@ pub struct DawnGrowMemberRow {
 columns: Vec<ColumnData>,
 }
 impl DawnGrowMemberRow {
-pub fn SelectImage(&self) -> &ColumnData {
-&self.columns[0]
+pub fn SelectImage(&self) -> [&ColumnData; 4] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],]
 }
-pub fn PortraitImage(&self) -> &ColumnData {
-&self.columns[1]
+pub fn PortraitImage(&self) -> [&ColumnData; 4] {
+[&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],]
 }
 pub fn Class(&self) -> &ColumnData {
-&self.columns[2]
+&self.columns[8]
 }
 }

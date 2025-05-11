@@ -28,13 +28,13 @@ impl ActionComboRouteRow {
 pub fn Name(&self) -> &ColumnData {
 &self.columns[0]
 }
-pub fn Action(&self) -> &ColumnData {
-&self.columns[1]
+pub fn Action(&self) -> [&ColumnData; 7] {
+[&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],]
 }
 pub fn Unknown3(&self) -> &ColumnData {
-&self.columns[2]
+&self.columns[8]
 }
 pub fn Unknown4(&self) -> &ColumnData {
-&self.columns[3]
+&self.columns[9]
 }
 }

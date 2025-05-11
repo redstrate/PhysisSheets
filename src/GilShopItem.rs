@@ -28,28 +28,28 @@ impl GilShopItemRow {
 pub fn Item(&self) -> &ColumnData {
 &self.columns[0]
 }
-pub fn QuestRequired(&self) -> &ColumnData {
-&self.columns[1]
+pub fn QuestRequired(&self) -> [&ColumnData; 2] {
+[&self.columns[1],&self.columns[2],]
 }
 pub fn AchievementRequired(&self) -> &ColumnData {
-&self.columns[2]
-}
-pub fn StateRequired(&self) -> &ColumnData {
 &self.columns[3]
 }
-pub fn Patch(&self) -> &ColumnData {
+pub fn StateRequired(&self) -> &ColumnData {
 &self.columns[4]
 }
-pub fn Unknown_70_1(&self) -> &ColumnData {
+pub fn Patch(&self) -> &ColumnData {
 &self.columns[5]
 }
-pub fn Unknown_70_2(&self) -> &ColumnData {
+pub fn Unknown_70_1(&self) -> &ColumnData {
 &self.columns[6]
 }
-pub fn Unknown1(&self) -> &ColumnData {
+pub fn Unknown_70_2(&self) -> &ColumnData {
 &self.columns[7]
 }
-pub fn IsHQ(&self) -> &ColumnData {
+pub fn Unknown1(&self) -> &ColumnData {
 &self.columns[8]
+}
+pub fn IsHQ(&self) -> &ColumnData {
+&self.columns[9]
 }
 }

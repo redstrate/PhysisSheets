@@ -31,13 +31,13 @@ pub fn Name(&self) -> &ColumnData {
 pub fn Order(&self) -> &ColumnData {
 &self.columns[1]
 }
-pub fn RequiredItem(&self) -> &ColumnData {
-&self.columns[2]
+pub fn RequiredItem(&self) -> [&ColumnData; 3] {
+[&self.columns[2],&self.columns[3],&self.columns[4],]
 }
 pub fn CompanyCraftDraftCategory(&self) -> &ColumnData {
-&self.columns[3]
+&self.columns[5]
 }
-pub fn RequiredItemCount(&self) -> &ColumnData {
-&self.columns[4]
+pub fn RequiredItemCount(&self) -> [&ColumnData; 3] {
+[&self.columns[6],&self.columns[7],&self.columns[8],]
 }
 }

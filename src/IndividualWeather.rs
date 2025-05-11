@@ -25,7 +25,7 @@ pub struct IndividualWeatherRow {
 columns: Vec<ColumnData>,
 }
 impl IndividualWeatherRow {
-pub fn IndividualWeatherData(&self) -> &ColumnData {
-&self.columns[0]
+pub fn IndividualWeatherData(&self) -> [&ColumnData; 7] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],]
 }
 }

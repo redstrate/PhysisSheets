@@ -31,13 +31,13 @@ pub fn Icon(&self) -> &ColumnData {
 pub fn BNpcName(&self) -> &ColumnData {
 &self.columns[1]
 }
-pub fn PlaceNameZone(&self) -> &ColumnData {
-&self.columns[2]
+pub fn PlaceNameZone(&self) -> [&ColumnData; 3] {
+[&self.columns[2],&self.columns[3],&self.columns[4],]
 }
-pub fn PlaceNameLocation(&self) -> &ColumnData {
-&self.columns[3]
+pub fn PlaceNameLocation(&self) -> [&ColumnData; 3] {
+[&self.columns[5],&self.columns[6],&self.columns[7],]
 }
 pub fn Town(&self) -> &ColumnData {
-&self.columns[4]
+&self.columns[8]
 }
 }

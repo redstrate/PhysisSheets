@@ -34,7 +34,7 @@ pub fn Unknown0(&self) -> &ColumnData {
 pub fn SecondaryStatTotal(&self) -> &ColumnData {
 &self.columns[2]
 }
-pub fn Parameter(&self) -> &ColumnData {
-&self.columns[3]
+pub fn Parameter(&self) -> [&ColumnData; 5] {
+[&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],]
 }
 }

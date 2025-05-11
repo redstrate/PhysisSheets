@@ -43,7 +43,7 @@ pub fn Unknown3(&self) -> &ColumnData {
 pub fn Unknown4(&self) -> &ColumnData {
 &self.columns[5]
 }
-pub fn GrandCompany(&self) -> &ColumnData {
-&self.columns[6]
+pub fn GrandCompany(&self) -> [&ColumnData; 3] {
+[&self.columns[6],&self.columns[7],&self.columns[8],]
 }
 }

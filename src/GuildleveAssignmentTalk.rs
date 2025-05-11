@@ -115,7 +115,7 @@ pub fn Unknown28(&self) -> &ColumnData {
 pub fn Unknown29(&self) -> &ColumnData {
 &self.columns[29]
 }
-pub fn Talk(&self) -> &ColumnData {
-&self.columns[30]
+pub fn Talk(&self) -> [&ColumnData; 8] {
+[&self.columns[30],&self.columns[31],&self.columns[32],&self.columns[33],&self.columns[34],&self.columns[35],&self.columns[36],&self.columns[37],]
 }
 }

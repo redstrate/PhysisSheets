@@ -25,16 +25,16 @@ pub struct QuestEffectRow {
 columns: Vec<ColumnData>,
 }
 impl QuestEffectRow {
-pub fn UnknownStruct(&self) -> &ColumnData {
-&self.columns[0]
+pub fn UnknownStruct(&self) -> [&ColumnData; 4] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],]
 }
 pub fn Unknown8(&self) -> &ColumnData {
-&self.columns[1]
+&self.columns[4]
 }
 pub fn Unknown9(&self) -> &ColumnData {
-&self.columns[2]
+&self.columns[5]
 }
 pub fn Unknown_70(&self) -> &ColumnData {
-&self.columns[3]
+&self.columns[6]
 }
 }

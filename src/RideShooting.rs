@@ -25,25 +25,25 @@ pub struct RideShootingRow {
 columns: Vec<ColumnData>,
 }
 impl RideShootingRow {
-pub fn RideShootingParams(&self) -> &ColumnData {
-&self.columns[0]
+pub fn RideShootingParams(&self) -> [&ColumnData; 8] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],]
 }
 pub fn GFateRideShooting(&self) -> &ColumnData {
-&self.columns[1]
+&self.columns[8]
 }
 pub fn Unknown0(&self) -> &ColumnData {
-&self.columns[2]
+&self.columns[9]
 }
 pub fn Unknown1(&self) -> &ColumnData {
-&self.columns[3]
+&self.columns[10]
 }
 pub fn StartText(&self) -> &ColumnData {
-&self.columns[4]
+&self.columns[11]
 }
 pub fn Unknown2(&self) -> &ColumnData {
-&self.columns[5]
+&self.columns[12]
 }
 pub fn Unknown3(&self) -> &ColumnData {
-&self.columns[6]
+&self.columns[13]
 }
 }

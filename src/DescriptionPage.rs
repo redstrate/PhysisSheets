@@ -31,16 +31,16 @@ pub fn Quest(&self) -> &ColumnData {
 pub fn Unknown2(&self) -> &ColumnData {
 &self.columns[1]
 }
-pub fn Image(&self) -> &ColumnData {
-&self.columns[2]
+pub fn Image(&self) -> [&ColumnData; 11] {
+[&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],&self.columns[8],&self.columns[9],&self.columns[10],&self.columns[11],&self.columns[12],]
 }
-pub fn Text(&self) -> &ColumnData {
-&self.columns[3]
+pub fn Text(&self) -> [&ColumnData; 11] {
+[&self.columns[13],&self.columns[14],&self.columns[15],&self.columns[16],&self.columns[17],&self.columns[18],&self.columns[19],&self.columns[20],&self.columns[21],&self.columns[22],&self.columns[23],]
 }
 pub fn Unknown0(&self) -> &ColumnData {
-&self.columns[4]
+&self.columns[24]
 }
 pub fn Unknown1(&self) -> &ColumnData {
-&self.columns[5]
+&self.columns[25]
 }
 }

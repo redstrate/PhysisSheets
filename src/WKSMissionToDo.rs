@@ -34,43 +34,43 @@ pub fn Unknown1(&self) -> &ColumnData {
 pub fn Unknown2(&self) -> &ColumnData {
 &self.columns[2]
 }
-pub fn RequiredItem(&self) -> &ColumnData {
-&self.columns[3]
+pub fn RequiredItem(&self) -> [&ColumnData; 3] {
+[&self.columns[3],&self.columns[4],&self.columns[5],]
 }
-pub fn RequiredItemQuantity(&self) -> &ColumnData {
-&self.columns[4]
+pub fn RequiredItemQuantity(&self) -> [&ColumnData; 3] {
+[&self.columns[6],&self.columns[7],&self.columns[8],]
 }
 pub fn Unknown9(&self) -> &ColumnData {
-&self.columns[5]
-}
-pub fn Unknown10(&self) -> &ColumnData {
-&self.columns[6]
-}
-pub fn Unknown11(&self) -> &ColumnData {
-&self.columns[7]
-}
-pub fn Unknown12(&self) -> &ColumnData {
-&self.columns[8]
-}
-pub fn Unknown13(&self) -> &ColumnData {
 &self.columns[9]
 }
-pub fn Unknown14(&self) -> &ColumnData {
+pub fn Unknown10(&self) -> &ColumnData {
 &self.columns[10]
 }
-pub fn Unknown15(&self) -> &ColumnData {
+pub fn Unknown11(&self) -> &ColumnData {
 &self.columns[11]
 }
-pub fn Unknown16(&self) -> &ColumnData {
+pub fn Unknown12(&self) -> &ColumnData {
 &self.columns[12]
 }
-pub fn Unknown17(&self) -> &ColumnData {
+pub fn Unknown13(&self) -> &ColumnData {
 &self.columns[13]
 }
-pub fn Unknown18(&self) -> &ColumnData {
+pub fn Unknown14(&self) -> &ColumnData {
 &self.columns[14]
 }
-pub fn Unknown19(&self) -> &ColumnData {
+pub fn Unknown15(&self) -> &ColumnData {
 &self.columns[15]
+}
+pub fn Unknown16(&self) -> &ColumnData {
+&self.columns[16]
+}
+pub fn Unknown17(&self) -> &ColumnData {
+&self.columns[17]
+}
+pub fn Unknown18(&self) -> &ColumnData {
+&self.columns[18]
+}
+pub fn Unknown19(&self) -> &ColumnData {
+&self.columns[19]
 }
 }

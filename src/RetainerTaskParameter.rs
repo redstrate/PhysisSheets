@@ -25,13 +25,13 @@ pub struct RetainerTaskParameterRow {
 columns: Vec<ColumnData>,
 }
 impl RetainerTaskParameterRow {
-pub fn ItemLevelDoW(&self) -> &ColumnData {
-&self.columns[0]
+pub fn ItemLevelDoW(&self) -> [&ColumnData; 4] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],]
 }
-pub fn PerceptionDoL(&self) -> &ColumnData {
-&self.columns[1]
+pub fn PerceptionDoL(&self) -> [&ColumnData; 4] {
+[&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],]
 }
-pub fn PerceptionFSH(&self) -> &ColumnData {
-&self.columns[2]
+pub fn PerceptionFSH(&self) -> [&ColumnData; 4] {
+[&self.columns[8],&self.columns[9],&self.columns[10],&self.columns[11],]
 }
 }

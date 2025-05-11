@@ -25,7 +25,7 @@ pub struct MJIFarmPastureRankRow {
 columns: Vec<ColumnData>,
 }
 impl MJIFarmPastureRankRow {
-pub fn RankData(&self) -> &ColumnData {
-&self.columns[0]
+pub fn RankData(&self) -> [&ColumnData; 4] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],]
 }
 }

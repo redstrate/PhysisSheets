@@ -25,25 +25,25 @@ pub struct BattleLeveRow {
 columns: Vec<ColumnData>,
 }
 impl BattleLeveRow {
-pub fn Time(&self) -> &ColumnData {
-&self.columns[0]
+pub fn Time(&self) -> [&ColumnData; 8] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],]
 }
-pub fn LeveData(&self) -> &ColumnData {
-&self.columns[1]
+pub fn LeveData(&self) -> [&ColumnData; 8] {
+[&self.columns[8],&self.columns[9],&self.columns[10],&self.columns[11],&self.columns[12],&self.columns[13],&self.columns[14],&self.columns[15],]
 }
-pub fn ToDoSequence(&self) -> &ColumnData {
-&self.columns[2]
+pub fn ToDoSequence(&self) -> [&ColumnData; 8] {
+[&self.columns[16],&self.columns[17],&self.columns[18],&self.columns[19],&self.columns[20],&self.columns[21],&self.columns[22],&self.columns[23],]
 }
 pub fn Rule(&self) -> &ColumnData {
-&self.columns[3]
+&self.columns[24]
 }
-pub fn Objectives(&self) -> &ColumnData {
-&self.columns[4]
+pub fn Objectives(&self) -> [&ColumnData; 3] {
+[&self.columns[25],&self.columns[26],&self.columns[27],]
 }
-pub fn Help(&self) -> &ColumnData {
-&self.columns[5]
+pub fn Help(&self) -> [&ColumnData; 2] {
+[&self.columns[28],&self.columns[29],]
 }
 pub fn Variant(&self) -> &ColumnData {
-&self.columns[6]
+&self.columns[30]
 }
 }

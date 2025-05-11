@@ -25,7 +25,7 @@ pub struct BankaCraftWorksSupplyRow {
 columns: Vec<ColumnData>,
 }
 impl BankaCraftWorksSupplyRow {
-pub fn Item(&self) -> &ColumnData {
-&self.columns[0]
+pub fn Item(&self) -> [&ColumnData; 4] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],]
 }
 }

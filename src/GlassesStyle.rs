@@ -58,10 +58,10 @@ pub fn Icon(&self) -> &ColumnData {
 pub fn Order(&self) -> &ColumnData {
 &self.columns[10]
 }
-pub fn Glasses(&self) -> &ColumnData {
-&self.columns[11]
+pub fn Glasses(&self) -> [&ColumnData; 12] {
+[&self.columns[11],&self.columns[12],&self.columns[13],&self.columns[14],&self.columns[15],&self.columns[16],&self.columns[17],&self.columns[18],&self.columns[19],&self.columns[20],&self.columns[21],&self.columns[22],]
 }
 pub fn Unknown_70_7(&self) -> &ColumnData {
-&self.columns[12]
+&self.columns[23]
 }
 }

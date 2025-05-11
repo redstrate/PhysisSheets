@@ -34,127 +34,127 @@ pub fn Description(&self) -> &ColumnData {
 pub fn Objective(&self) -> &ColumnData {
 &self.columns[2]
 }
-pub fn StatusText(&self) -> &ColumnData {
-&self.columns[3]
+pub fn StatusText(&self) -> [&ColumnData; 3] {
+[&self.columns[3],&self.columns[4],&self.columns[5],]
 }
 pub fn Unknown0(&self) -> &ColumnData {
-&self.columns[4]
-}
-pub fn Unknown1(&self) -> &ColumnData {
-&self.columns[5]
-}
-pub fn ReqEventItem(&self) -> &ColumnData {
 &self.columns[6]
 }
-pub fn TurnInEventItem(&self) -> &ColumnData {
+pub fn Unknown1(&self) -> &ColumnData {
 &self.columns[7]
 }
-pub fn Unknown2(&self) -> &ColumnData {
+pub fn ReqEventItem(&self) -> &ColumnData {
 &self.columns[8]
 }
-pub fn Unknown10(&self) -> &ColumnData {
+pub fn TurnInEventItem(&self) -> &ColumnData {
 &self.columns[9]
 }
-pub fn Unknown11(&self) -> &ColumnData {
-&self.columns[10]
+pub fn Unknown2(&self) -> [&ColumnData; 3] {
+[&self.columns[10],&self.columns[11],&self.columns[12],]
 }
-pub fn Unknown12(&self) -> &ColumnData {
-&self.columns[11]
-}
-pub fn ObjectiveIcon(&self) -> &ColumnData {
-&self.columns[12]
-}
-pub fn Location(&self) -> &ColumnData {
+pub fn Unknown10(&self) -> &ColumnData {
 &self.columns[13]
 }
-pub fn EventItem(&self) -> &ColumnData {
+pub fn Unknown11(&self) -> &ColumnData {
 &self.columns[14]
 }
-pub fn Icon(&self) -> &ColumnData {
+pub fn Unknown12(&self) -> &ColumnData {
 &self.columns[15]
 }
+pub fn ObjectiveIcon(&self) -> [&ColumnData; 32] {
+[&self.columns[16],&self.columns[17],&self.columns[18],&self.columns[19],&self.columns[20],&self.columns[21],&self.columns[22],&self.columns[23],&self.columns[24],&self.columns[25],&self.columns[26],&self.columns[27],&self.columns[28],&self.columns[29],&self.columns[30],&self.columns[31],&self.columns[32],&self.columns[33],&self.columns[34],&self.columns[35],&self.columns[36],&self.columns[37],&self.columns[38],&self.columns[39],&self.columns[40],&self.columns[41],&self.columns[42],&self.columns[43],&self.columns[44],&self.columns[45],&self.columns[46],&self.columns[47],]
+}
+pub fn Location(&self) -> &ColumnData {
+&self.columns[48]
+}
+pub fn EventItem(&self) -> &ColumnData {
+&self.columns[49]
+}
+pub fn Icon(&self) -> &ColumnData {
+&self.columns[50]
+}
 pub fn MapIcon(&self) -> &ColumnData {
-&self.columns[16]
+&self.columns[51]
 }
 pub fn InactiveMapIcon(&self) -> &ColumnData {
-&self.columns[17]
+&self.columns[52]
 }
 pub fn LGBGuardNPCLocation(&self) -> &ColumnData {
-&self.columns[18]
+&self.columns[53]
 }
 pub fn RequiredQuest(&self) -> &ColumnData {
-&self.columns[19]
+&self.columns[54]
 }
 pub fn FATEChain(&self) -> &ColumnData {
-&self.columns[20]
+&self.columns[55]
 }
 pub fn Unknown13(&self) -> &ColumnData {
-&self.columns[21]
+&self.columns[56]
 }
 pub fn ArrayIndex(&self) -> &ColumnData {
-&self.columns[22]
+&self.columns[57]
 }
 pub fn Unknown3(&self) -> &ColumnData {
-&self.columns[23]
+&self.columns[58]
 }
 pub fn FateRuleEx(&self) -> &ColumnData {
-&self.columns[24]
+&self.columns[59]
 }
 pub fn Music(&self) -> &ColumnData {
-&self.columns[25]
+&self.columns[60]
 }
 pub fn ScreenImageAccept(&self) -> &ColumnData {
-&self.columns[26]
+&self.columns[61]
 }
 pub fn ScreenImageComplete(&self) -> &ColumnData {
-&self.columns[27]
+&self.columns[62]
 }
 pub fn ScreenImageFailed(&self) -> &ColumnData {
-&self.columns[28]
+&self.columns[63]
 }
 pub fn GivenStatus(&self) -> &ColumnData {
-&self.columns[29]
+&self.columns[64]
 }
 pub fn Unknown4(&self) -> &ColumnData {
-&self.columns[30]
+&self.columns[65]
 }
 pub fn Unknown5(&self) -> &ColumnData {
-&self.columns[31]
+&self.columns[66]
 }
 pub fn EurekaFate(&self) -> &ColumnData {
-&self.columns[32]
+&self.columns[67]
 }
 pub fn Rule(&self) -> &ColumnData {
-&self.columns[33]
+&self.columns[68]
 }
 pub fn ClassJobLevel(&self) -> &ColumnData {
-&self.columns[34]
+&self.columns[69]
 }
 pub fn ClassJobLevelMax(&self) -> &ColumnData {
-&self.columns[35]
+&self.columns[70]
 }
-pub fn StatusValue(&self) -> &ColumnData {
-&self.columns[36]
+pub fn StatusValue(&self) -> [&ColumnData; 3] {
+[&self.columns[71],&self.columns[72],&self.columns[73],]
 }
 pub fn Unknown6(&self) -> &ColumnData {
-&self.columns[37]
+&self.columns[74]
 }
 pub fn Unknown7(&self) -> &ColumnData {
-&self.columns[38]
+&self.columns[75]
 }
 pub fn SpecialFate(&self) -> &ColumnData {
-&self.columns[39]
+&self.columns[76]
 }
 pub fn Unknown8(&self) -> &ColumnData {
-&self.columns[40]
+&self.columns[77]
 }
 pub fn AdventEvent(&self) -> &ColumnData {
-&self.columns[41]
+&self.columns[78]
 }
 pub fn MoonFaireEvent(&self) -> &ColumnData {
-&self.columns[42]
+&self.columns[79]
 }
 pub fn Unknown9(&self) -> &ColumnData {
-&self.columns[43]
+&self.columns[80]
 }
 }

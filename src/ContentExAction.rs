@@ -25,10 +25,10 @@ pub struct ContentExActionRow {
 columns: Vec<ColumnData>,
 }
 impl ContentExActionRow {
-pub fn Name(&self) -> &ColumnData {
-&self.columns[0]
+pub fn Name(&self) -> [&ColumnData; 2] {
+[&self.columns[0],&self.columns[1],]
 }
-pub fn Charges(&self) -> &ColumnData {
-&self.columns[1]
+pub fn Charges(&self) -> [&ColumnData; 2] {
+[&self.columns[2],&self.columns[3],]
 }
 }

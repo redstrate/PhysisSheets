@@ -31,13 +31,13 @@ pub fn Leve(&self) -> &ColumnData {
 pub fn CraftLeveTalk(&self) -> &ColumnData {
 &self.columns[1]
 }
-pub fn Item(&self) -> &ColumnData {
-&self.columns[2]
+pub fn Item(&self) -> [&ColumnData; 4] {
+[&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],]
 }
-pub fn ItemCount(&self) -> &ColumnData {
-&self.columns[3]
+pub fn ItemCount(&self) -> [&ColumnData; 4] {
+[&self.columns[6],&self.columns[7],&self.columns[8],&self.columns[9],]
 }
 pub fn Repeats(&self) -> &ColumnData {
-&self.columns[4]
+&self.columns[10]
 }
 }

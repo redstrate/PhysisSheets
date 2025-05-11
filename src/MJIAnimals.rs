@@ -28,19 +28,19 @@ impl MJIAnimalsRow {
 pub fn BNpcBase(&self) -> &ColumnData {
 &self.columns[0]
 }
-pub fn Reward(&self) -> &ColumnData {
-&self.columns[1]
+pub fn Reward(&self) -> [&ColumnData; 2] {
+[&self.columns[1],&self.columns[2],]
 }
 pub fn Icon(&self) -> &ColumnData {
-&self.columns[2]
-}
-pub fn Size(&self) -> &ColumnData {
 &self.columns[3]
 }
-pub fn Unknown0(&self) -> &ColumnData {
+pub fn Size(&self) -> &ColumnData {
 &self.columns[4]
 }
-pub fn Unknown1(&self) -> &ColumnData {
+pub fn Unknown0(&self) -> &ColumnData {
 &self.columns[5]
+}
+pub fn Unknown1(&self) -> &ColumnData {
+&self.columns[6]
 }
 }

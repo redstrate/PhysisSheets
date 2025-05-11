@@ -40,88 +40,88 @@ pub fn CraftType(&self) -> &ColumnData {
 pub fn ItemResult(&self) -> &ColumnData {
 &self.columns[4]
 }
-pub fn Ingredient(&self) -> &ColumnData {
-&self.columns[5]
+pub fn Ingredient(&self) -> [&ColumnData; 8] {
+[&self.columns[5],&self.columns[6],&self.columns[7],&self.columns[8],&self.columns[9],&self.columns[10],&self.columns[11],&self.columns[12],]
 }
 pub fn StatusRequired(&self) -> &ColumnData {
-&self.columns[6]
-}
-pub fn ItemRequired(&self) -> &ColumnData {
-&self.columns[7]
-}
-pub fn RecipeLevelTable(&self) -> &ColumnData {
-&self.columns[8]
-}
-pub fn MaxAdjustableJobLevel(&self) -> &ColumnData {
-&self.columns[9]
-}
-pub fn RecipeNotebookList(&self) -> &ColumnData {
-&self.columns[10]
-}
-pub fn DisplayPriority(&self) -> &ColumnData {
-&self.columns[11]
-}
-pub fn DifficultyFactor(&self) -> &ColumnData {
-&self.columns[12]
-}
-pub fn QualityFactor(&self) -> &ColumnData {
 &self.columns[13]
 }
-pub fn DurabilityFactor(&self) -> &ColumnData {
+pub fn ItemRequired(&self) -> &ColumnData {
 &self.columns[14]
 }
-pub fn RequiredCraftsmanship(&self) -> &ColumnData {
+pub fn RecipeLevelTable(&self) -> &ColumnData {
 &self.columns[15]
 }
-pub fn RequiredControl(&self) -> &ColumnData {
+pub fn MaxAdjustableJobLevel(&self) -> &ColumnData {
 &self.columns[16]
 }
-pub fn QuickSynthCraftsmanship(&self) -> &ColumnData {
+pub fn RecipeNotebookList(&self) -> &ColumnData {
 &self.columns[17]
 }
-pub fn QuickSynthControl(&self) -> &ColumnData {
+pub fn DisplayPriority(&self) -> &ColumnData {
 &self.columns[18]
 }
-pub fn SecretRecipeBook(&self) -> &ColumnData {
+pub fn DifficultyFactor(&self) -> &ColumnData {
 &self.columns[19]
 }
-pub fn CollectableMetadata(&self) -> &ColumnData {
+pub fn QualityFactor(&self) -> &ColumnData {
 &self.columns[20]
 }
-pub fn PatchNumber(&self) -> &ColumnData {
+pub fn DurabilityFactor(&self) -> &ColumnData {
 &self.columns[21]
 }
-pub fn AmountResult(&self) -> &ColumnData {
+pub fn RequiredCraftsmanship(&self) -> &ColumnData {
 &self.columns[22]
 }
-pub fn AmountIngredient(&self) -> &ColumnData {
+pub fn RequiredControl(&self) -> &ColumnData {
 &self.columns[23]
 }
-pub fn MaterialQualityFactor(&self) -> &ColumnData {
+pub fn QuickSynthCraftsmanship(&self) -> &ColumnData {
 &self.columns[24]
 }
-pub fn CollectableMetadataKey(&self) -> &ColumnData {
+pub fn QuickSynthControl(&self) -> &ColumnData {
 &self.columns[25]
 }
-pub fn IsSecondary(&self) -> &ColumnData {
+pub fn SecretRecipeBook(&self) -> &ColumnData {
 &self.columns[26]
 }
-pub fn CanQuickSynth(&self) -> &ColumnData {
+pub fn CollectableMetadata(&self) -> &ColumnData {
 &self.columns[27]
 }
-pub fn CanHq(&self) -> &ColumnData {
+pub fn PatchNumber(&self) -> &ColumnData {
 &self.columns[28]
 }
-pub fn ExpRewarded(&self) -> &ColumnData {
+pub fn AmountResult(&self) -> &ColumnData {
 &self.columns[29]
 }
+pub fn AmountIngredient(&self) -> [&ColumnData; 8] {
+[&self.columns[30],&self.columns[31],&self.columns[32],&self.columns[33],&self.columns[34],&self.columns[35],&self.columns[36],&self.columns[37],]
+}
+pub fn MaterialQualityFactor(&self) -> &ColumnData {
+&self.columns[38]
+}
+pub fn CollectableMetadataKey(&self) -> &ColumnData {
+&self.columns[39]
+}
+pub fn IsSecondary(&self) -> &ColumnData {
+&self.columns[40]
+}
+pub fn CanQuickSynth(&self) -> &ColumnData {
+&self.columns[41]
+}
+pub fn CanHq(&self) -> &ColumnData {
+&self.columns[42]
+}
+pub fn ExpRewarded(&self) -> &ColumnData {
+&self.columns[43]
+}
 pub fn Unknown1(&self) -> &ColumnData {
-&self.columns[30]
+&self.columns[44]
 }
 pub fn IsSpecializationRequired(&self) -> &ColumnData {
-&self.columns[31]
+&self.columns[45]
 }
 pub fn IsExpert(&self) -> &ColumnData {
-&self.columns[32]
+&self.columns[46]
 }
 }

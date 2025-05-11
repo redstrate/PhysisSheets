@@ -28,10 +28,10 @@ impl MJIRankRow {
 pub fn ExpToNext(&self) -> &ColumnData {
 &self.columns[0]
 }
-pub fn LogMessage(&self) -> &ColumnData {
-&self.columns[1]
+pub fn LogMessage(&self) -> [&ColumnData; 3] {
+[&self.columns[1],&self.columns[2],&self.columns[3],]
 }
 pub fn Unknown0(&self) -> &ColumnData {
-&self.columns[2]
+&self.columns[4]
 }
 }

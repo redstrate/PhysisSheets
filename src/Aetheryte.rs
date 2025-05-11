@@ -52,43 +52,43 @@ pub fn Article(&self) -> &ColumnData {
 pub fn Unknown1(&self) -> &ColumnData {
 &self.columns[8]
 }
-pub fn Level(&self) -> &ColumnData {
-&self.columns[9]
+pub fn Level(&self) -> [&ColumnData; 4] {
+[&self.columns[9],&self.columns[10],&self.columns[11],&self.columns[12],]
 }
 pub fn RequiredQuest(&self) -> &ColumnData {
-&self.columns[10]
-}
-pub fn PlaceName(&self) -> &ColumnData {
-&self.columns[11]
-}
-pub fn AethernetName(&self) -> &ColumnData {
-&self.columns[12]
-}
-pub fn Territory(&self) -> &ColumnData {
 &self.columns[13]
 }
-pub fn Map(&self) -> &ColumnData {
+pub fn PlaceName(&self) -> &ColumnData {
 &self.columns[14]
 }
-pub fn AetherstreamX(&self) -> &ColumnData {
+pub fn AethernetName(&self) -> &ColumnData {
 &self.columns[15]
 }
-pub fn AetherstreamY(&self) -> &ColumnData {
+pub fn Territory(&self) -> &ColumnData {
 &self.columns[16]
 }
-pub fn Unknown2(&self) -> &ColumnData {
+pub fn Map(&self) -> &ColumnData {
 &self.columns[17]
 }
-pub fn AethernetGroup(&self) -> &ColumnData {
+pub fn AetherstreamX(&self) -> &ColumnData {
 &self.columns[18]
 }
-pub fn Order(&self) -> &ColumnData {
+pub fn AetherstreamY(&self) -> &ColumnData {
 &self.columns[19]
 }
-pub fn IsAetheryte(&self) -> &ColumnData {
+pub fn Unknown2(&self) -> &ColumnData {
 &self.columns[20]
 }
-pub fn Invisible(&self) -> &ColumnData {
+pub fn AethernetGroup(&self) -> &ColumnData {
 &self.columns[21]
+}
+pub fn Order(&self) -> &ColumnData {
+&self.columns[22]
+}
+pub fn IsAetheryte(&self) -> &ColumnData {
+&self.columns[23]
+}
+pub fn Invisible(&self) -> &ColumnData {
+&self.columns[24]
 }
 }

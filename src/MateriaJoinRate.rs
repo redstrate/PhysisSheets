@@ -25,10 +25,10 @@ pub struct MateriaJoinRateRow {
 columns: Vec<ColumnData>,
 }
 impl MateriaJoinRateRow {
-pub fn NQOvermeldPercentSlot(&self) -> &ColumnData {
-&self.columns[0]
+pub fn NQOvermeldPercentSlot(&self) -> [&ColumnData; 4] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],]
 }
-pub fn HQOvermeldPercentSlot(&self) -> &ColumnData {
-&self.columns[1]
+pub fn HQOvermeldPercentSlot(&self) -> [&ColumnData; 4] {
+[&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],]
 }
 }

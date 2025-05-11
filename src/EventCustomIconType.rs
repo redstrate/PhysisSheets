@@ -25,10 +25,10 @@ pub struct EventCustomIconTypeRow {
 columns: Vec<ColumnData>,
 }
 impl EventCustomIconTypeRow {
-pub fn Icons(&self) -> &ColumnData {
-&self.columns[0]
+pub fn Icons(&self) -> [&ColumnData; 10] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],&self.columns[8],&self.columns[9],]
 }
 pub fn Unknown0(&self) -> &ColumnData {
-&self.columns[1]
+&self.columns[10]
 }
 }

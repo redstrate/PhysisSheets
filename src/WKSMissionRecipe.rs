@@ -25,7 +25,7 @@ pub struct WKSMissionRecipeRow {
 columns: Vec<ColumnData>,
 }
 impl WKSMissionRecipeRow {
-pub fn Recipe(&self) -> &ColumnData {
-&self.columns[0]
+pub fn Recipe(&self) -> [&ColumnData; 5] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],]
 }
 }

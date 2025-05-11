@@ -28,25 +28,25 @@ impl IKDRouteRow {
 pub fn Name(&self) -> &ColumnData {
 &self.columns[0]
 }
-pub fn Spot(&self) -> &ColumnData {
-&self.columns[1]
+pub fn Spot(&self) -> [&ColumnData; 3] {
+[&self.columns[1],&self.columns[2],&self.columns[3],]
 }
 pub fn Image(&self) -> &ColumnData {
-&self.columns[2]
-}
-pub fn Unknown0(&self) -> &ColumnData {
-&self.columns[3]
-}
-pub fn Unknown1(&self) -> &ColumnData {
 &self.columns[4]
 }
-pub fn Instance(&self) -> &ColumnData {
+pub fn Unknown0(&self) -> &ColumnData {
 &self.columns[5]
 }
-pub fn Unknown2(&self) -> &ColumnData {
+pub fn Unknown1(&self) -> &ColumnData {
 &self.columns[6]
 }
-pub fn Time(&self) -> &ColumnData {
+pub fn Instance(&self) -> &ColumnData {
 &self.columns[7]
+}
+pub fn Unknown2(&self) -> &ColumnData {
+&self.columns[8]
+}
+pub fn Time(&self) -> [&ColumnData; 3] {
+[&self.columns[9],&self.columns[10],&self.columns[11],]
 }
 }

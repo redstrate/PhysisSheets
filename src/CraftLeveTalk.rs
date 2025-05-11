@@ -133,7 +133,7 @@ pub fn Unknown34(&self) -> &ColumnData {
 pub fn Unknown35(&self) -> &ColumnData {
 &self.columns[35]
 }
-pub fn Talk(&self) -> &ColumnData {
-&self.columns[36]
+pub fn Talk(&self) -> [&ColumnData; 6] {
+[&self.columns[36],&self.columns[37],&self.columns[38],&self.columns[39],&self.columns[40],&self.columns[41],]
 }
 }

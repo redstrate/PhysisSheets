@@ -34,7 +34,7 @@ pub fn Item(&self) -> &ColumnData {
 pub fn Companion(&self) -> &ColumnData {
 &self.columns[2]
 }
-pub fn Location(&self) -> &ColumnData {
-&self.columns[3]
+pub fn Location(&self) -> [&ColumnData; 6] {
+[&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],&self.columns[8],]
 }
 }

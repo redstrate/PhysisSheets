@@ -31,28 +31,28 @@ pub fn Type(&self) -> &ColumnData {
 pub fn AssignmentTalk(&self) -> &ColumnData {
 &self.columns[1]
 }
-pub fn Quest(&self) -> &ColumnData {
-&self.columns[2]
+pub fn Quest(&self) -> [&ColumnData; 2] {
+[&self.columns[2],&self.columns[3],]
 }
 pub fn Unknown0(&self) -> &ColumnData {
-&self.columns[3]
-}
-pub fn Unknown1(&self) -> &ColumnData {
 &self.columns[4]
 }
-pub fn Unknown2(&self) -> &ColumnData {
+pub fn Unknown1(&self) -> &ColumnData {
 &self.columns[5]
 }
-pub fn Unknown3(&self) -> &ColumnData {
+pub fn Unknown2(&self) -> &ColumnData {
 &self.columns[6]
 }
-pub fn Unknown4(&self) -> &ColumnData {
+pub fn Unknown3(&self) -> &ColumnData {
 &self.columns[7]
 }
-pub fn Unknown5(&self) -> &ColumnData {
+pub fn Unknown4(&self) -> &ColumnData {
 &self.columns[8]
 }
-pub fn Unknown6(&self) -> &ColumnData {
+pub fn Unknown5(&self) -> &ColumnData {
 &self.columns[9]
+}
+pub fn Unknown6(&self) -> &ColumnData {
+&self.columns[10]
 }
 }

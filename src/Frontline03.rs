@@ -25,7 +25,7 @@ pub struct Frontline03Row {
 columns: Vec<ColumnData>,
 }
 impl Frontline03Row {
-pub fn OvooData(&self) -> &ColumnData {
-&self.columns[0]
+pub fn OvooData(&self) -> [&ColumnData; 3] {
+[&self.columns[0],&self.columns[1],&self.columns[2],]
 }
 }

@@ -37,13 +37,13 @@ pub fn Unknown1(&self) -> &ColumnData {
 pub fn Icon(&self) -> &ColumnData {
 &self.columns[3]
 }
-pub fn Cutscene(&self) -> &ColumnData {
-&self.columns[4]
+pub fn Cutscene(&self) -> [&ColumnData; 24] {
+[&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],&self.columns[8],&self.columns[9],&self.columns[10],&self.columns[11],&self.columns[12],&self.columns[13],&self.columns[14],&self.columns[15],&self.columns[16],&self.columns[17],&self.columns[18],&self.columns[19],&self.columns[20],&self.columns[21],&self.columns[22],&self.columns[23],&self.columns[24],&self.columns[25],&self.columns[26],&self.columns[27],]
 }
 pub fn RequiredLevel(&self) -> &ColumnData {
-&self.columns[5]
+&self.columns[28]
 }
 pub fn Unknown2(&self) -> &ColumnData {
-&self.columns[6]
+&self.columns[29]
 }
 }

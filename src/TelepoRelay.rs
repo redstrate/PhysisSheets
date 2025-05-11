@@ -25,10 +25,10 @@ pub struct TelepoRelayRow {
 columns: Vec<ColumnData>,
 }
 impl TelepoRelayRow {
-pub fn Relays(&self) -> &ColumnData {
-&self.columns[0]
+pub fn Relays(&self) -> [&ColumnData; 9] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],&self.columns[8],]
 }
 pub fn Unknown_70(&self) -> &ColumnData {
-&self.columns[1]
+&self.columns[9]
 }
 }

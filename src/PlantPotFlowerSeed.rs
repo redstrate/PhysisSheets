@@ -25,7 +25,7 @@ pub struct PlantPotFlowerSeedRow {
 columns: Vec<ColumnData>,
 }
 impl PlantPotFlowerSeedRow {
-pub fn SeedIcon(&self) -> &ColumnData {
-&self.columns[0]
+pub fn SeedIcon(&self) -> [&ColumnData; 9] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],&self.columns[8],]
 }
 }

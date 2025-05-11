@@ -25,139 +25,139 @@ pub struct SnipeRow {
 columns: Vec<ColumnData>,
 }
 impl SnipeRow {
-pub fn SnipeData(&self) -> &ColumnData {
-&self.columns[0]
+pub fn SnipeData(&self) -> [&ColumnData; 8] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],]
 }
-pub fn EventNPC(&self) -> &ColumnData {
-&self.columns[1]
+pub fn EventNPC(&self) -> [&ColumnData; 8] {
+[&self.columns[8],&self.columns[9],&self.columns[10],&self.columns[11],&self.columns[12],&self.columns[13],&self.columns[14],&self.columns[15],]
 }
 pub fn Unknown0(&self) -> &ColumnData {
-&self.columns[2]
-}
-pub fn Unknown1(&self) -> &ColumnData {
-&self.columns[3]
-}
-pub fn Unknown2(&self) -> &ColumnData {
-&self.columns[4]
-}
-pub fn Unknown3(&self) -> &ColumnData {
-&self.columns[5]
-}
-pub fn Unknown4(&self) -> &ColumnData {
-&self.columns[6]
-}
-pub fn Unknown5(&self) -> &ColumnData {
-&self.columns[7]
-}
-pub fn Unknown6(&self) -> &ColumnData {
-&self.columns[8]
-}
-pub fn Unknown7(&self) -> &ColumnData {
-&self.columns[9]
-}
-pub fn Unknown8(&self) -> &ColumnData {
-&self.columns[10]
-}
-pub fn Unknown9(&self) -> &ColumnData {
-&self.columns[11]
-}
-pub fn Unknown10(&self) -> &ColumnData {
-&self.columns[12]
-}
-pub fn Unknown11(&self) -> &ColumnData {
-&self.columns[13]
-}
-pub fn Objective0(&self) -> &ColumnData {
-&self.columns[14]
-}
-pub fn Hint0(&self) -> &ColumnData {
-&self.columns[15]
-}
-pub fn Objective1(&self) -> &ColumnData {
 &self.columns[16]
 }
-pub fn Hint1(&self) -> &ColumnData {
+pub fn Unknown1(&self) -> &ColumnData {
 &self.columns[17]
 }
-pub fn Unknown12(&self) -> &ColumnData {
+pub fn Unknown2(&self) -> &ColumnData {
 &self.columns[18]
 }
-pub fn Unknown13(&self) -> &ColumnData {
+pub fn Unknown3(&self) -> &ColumnData {
 &self.columns[19]
 }
-pub fn Unknown14(&self) -> &ColumnData {
+pub fn Unknown4(&self) -> &ColumnData {
 &self.columns[20]
 }
-pub fn Unknown15(&self) -> &ColumnData {
+pub fn Unknown5(&self) -> &ColumnData {
 &self.columns[21]
 }
-pub fn Unknown16(&self) -> &ColumnData {
+pub fn Unknown6(&self) -> &ColumnData {
 &self.columns[22]
 }
-pub fn Unknown17(&self) -> &ColumnData {
+pub fn Unknown7(&self) -> &ColumnData {
 &self.columns[23]
 }
-pub fn Unknown18(&self) -> &ColumnData {
+pub fn Unknown8(&self) -> &ColumnData {
 &self.columns[24]
 }
-pub fn ActionText(&self) -> &ColumnData {
+pub fn Unknown9(&self) -> &ColumnData {
 &self.columns[25]
 }
-pub fn Unknown19(&self) -> &ColumnData {
+pub fn Unknown10(&self) -> &ColumnData {
 &self.columns[26]
 }
-pub fn Unknown20(&self) -> &ColumnData {
+pub fn Unknown11(&self) -> &ColumnData {
 &self.columns[27]
 }
-pub fn VFXFire(&self) -> &ColumnData {
+pub fn Objective0(&self) -> &ColumnData {
 &self.columns[28]
 }
-pub fn VFXHit(&self) -> &ColumnData {
+pub fn Hint0(&self) -> &ColumnData {
 &self.columns[29]
 }
-pub fn VFXMiss(&self) -> &ColumnData {
+pub fn Objective1(&self) -> &ColumnData {
 &self.columns[30]
 }
-pub fn VFXAdditional(&self) -> &ColumnData {
+pub fn Hint1(&self) -> &ColumnData {
 &self.columns[31]
 }
-pub fn LGBTargetMarker(&self) -> &ColumnData {
+pub fn Unknown12(&self) -> &ColumnData {
 &self.columns[32]
 }
-pub fn Unknown21(&self) -> &ColumnData {
+pub fn Unknown13(&self) -> &ColumnData {
 &self.columns[33]
 }
-pub fn Unknown22(&self) -> &ColumnData {
+pub fn Unknown14(&self) -> &ColumnData {
 &self.columns[34]
 }
-pub fn Unknown23(&self) -> &ColumnData {
+pub fn Unknown15(&self) -> &ColumnData {
 &self.columns[35]
 }
-pub fn Unknown24(&self) -> &ColumnData {
+pub fn Unknown16(&self) -> &ColumnData {
 &self.columns[36]
 }
-pub fn Unknown25(&self) -> &ColumnData {
+pub fn Unknown17(&self) -> &ColumnData {
 &self.columns[37]
 }
-pub fn Unknown26(&self) -> &ColumnData {
+pub fn Unknown18(&self) -> &ColumnData {
 &self.columns[38]
 }
-pub fn Unknown27(&self) -> &ColumnData {
+pub fn ActionText(&self) -> &ColumnData {
 &self.columns[39]
 }
-pub fn Unknown28(&self) -> &ColumnData {
+pub fn Unknown19(&self) -> &ColumnData {
 &self.columns[40]
 }
-pub fn Unknown29(&self) -> &ColumnData {
+pub fn Unknown20(&self) -> &ColumnData {
 &self.columns[41]
 }
-pub fn Unknown30(&self) -> &ColumnData {
+pub fn VFXFire(&self) -> &ColumnData {
 &self.columns[42]
 }
-pub fn Unknown31(&self) -> &ColumnData {
+pub fn VFXHit(&self) -> &ColumnData {
 &self.columns[43]
 }
-pub fn Unknown32(&self) -> &ColumnData {
+pub fn VFXMiss(&self) -> &ColumnData {
 &self.columns[44]
+}
+pub fn VFXAdditional(&self) -> &ColumnData {
+&self.columns[45]
+}
+pub fn LGBTargetMarker(&self) -> &ColumnData {
+&self.columns[46]
+}
+pub fn Unknown21(&self) -> &ColumnData {
+&self.columns[47]
+}
+pub fn Unknown22(&self) -> &ColumnData {
+&self.columns[48]
+}
+pub fn Unknown23(&self) -> &ColumnData {
+&self.columns[49]
+}
+pub fn Unknown24(&self) -> &ColumnData {
+&self.columns[50]
+}
+pub fn Unknown25(&self) -> &ColumnData {
+&self.columns[51]
+}
+pub fn Unknown26(&self) -> &ColumnData {
+&self.columns[52]
+}
+pub fn Unknown27(&self) -> &ColumnData {
+&self.columns[53]
+}
+pub fn Unknown28(&self) -> &ColumnData {
+&self.columns[54]
+}
+pub fn Unknown29(&self) -> &ColumnData {
+&self.columns[55]
+}
+pub fn Unknown30(&self) -> &ColumnData {
+&self.columns[56]
+}
+pub fn Unknown31(&self) -> &ColumnData {
+&self.columns[57]
+}
+pub fn Unknown32(&self) -> &ColumnData {
+&self.columns[58]
 }
 }

@@ -37,13 +37,13 @@ pub fn ItemPouch(&self) -> &ColumnData {
 pub fn Yield(&self) -> &ColumnData {
 &self.columns[3]
 }
-pub fn Material(&self) -> &ColumnData {
-&self.columns[4]
+pub fn Material(&self) -> [&ColumnData; 5] {
+[&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],&self.columns[8],]
 }
-pub fn Amount(&self) -> &ColumnData {
-&self.columns[5]
+pub fn Amount(&self) -> [&ColumnData; 5] {
+[&self.columns[9],&self.columns[10],&self.columns[11],&self.columns[12],&self.columns[13],]
 }
 pub fn Order(&self) -> &ColumnData {
-&self.columns[6]
+&self.columns[14]
 }
 }

@@ -34,7 +34,7 @@ pub fn Description(&self) -> &ColumnData {
 pub fn Unknown1(&self) -> &ColumnData {
 &self.columns[2]
 }
-pub fn Page(&self) -> &ColumnData {
-&self.columns[3]
+pub fn Page(&self) -> [&ColumnData; 8] {
+[&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],&self.columns[8],&self.columns[9],&self.columns[10],]
 }
 }

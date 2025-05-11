@@ -100,13 +100,13 @@ pub fn Unknown1(&self) -> &ColumnData {
 pub fn OrderPriority(&self) -> &ColumnData {
 &self.columns[24]
 }
-pub fn MeldParam(&self) -> &ColumnData {
-&self.columns[25]
+pub fn MeldParam(&self) -> [&ColumnData; 13] {
+[&self.columns[25],&self.columns[26],&self.columns[27],&self.columns[28],&self.columns[29],&self.columns[30],&self.columns[31],&self.columns[32],&self.columns[33],&self.columns[34],&self.columns[35],&self.columns[36],&self.columns[37],]
 }
 pub fn PacketIndex(&self) -> &ColumnData {
-&self.columns[26]
+&self.columns[38]
 }
 pub fn Unknown2(&self) -> &ColumnData {
-&self.columns[27]
+&self.columns[39]
 }
 }

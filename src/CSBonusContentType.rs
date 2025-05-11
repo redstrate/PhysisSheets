@@ -25,28 +25,28 @@ pub struct CSBonusContentTypeRow {
 columns: Vec<ColumnData>,
 }
 impl CSBonusContentTypeRow {
-pub fn Dialogue(&self) -> &ColumnData {
-&self.columns[0]
+pub fn Dialogue(&self) -> [&ColumnData; 4] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],]
 }
 pub fn Image(&self) -> &ColumnData {
-&self.columns[1]
-}
-pub fn Unknown13(&self) -> &ColumnData {
-&self.columns[2]
-}
-pub fn UnlockQuest(&self) -> &ColumnData {
-&self.columns[3]
-}
-pub fn UnlockLink(&self) -> &ColumnData {
 &self.columns[4]
 }
-pub fn Unknown12(&self) -> &ColumnData {
+pub fn Unknown13(&self) -> &ColumnData {
 &self.columns[5]
 }
-pub fn ContentType(&self) -> &ColumnData {
+pub fn UnlockQuest(&self) -> &ColumnData {
 &self.columns[6]
 }
-pub fn Unknown6(&self) -> &ColumnData {
+pub fn UnlockLink(&self) -> &ColumnData {
 &self.columns[7]
+}
+pub fn Unknown12(&self) -> &ColumnData {
+&self.columns[8]
+}
+pub fn ContentType(&self) -> &ColumnData {
+&self.columns[9]
+}
+pub fn Unknown6(&self) -> &ColumnData {
+&self.columns[10]
 }
 }

@@ -25,13 +25,13 @@ pub struct SatisfactionBonusGuaranteeRow {
 columns: Vec<ColumnData>,
 }
 impl SatisfactionBonusGuaranteeRow {
-pub fn BonusDoH(&self) -> &ColumnData {
-&self.columns[0]
+pub fn BonusDoH(&self) -> [&ColumnData; 2] {
+[&self.columns[0],&self.columns[1],]
 }
-pub fn BonusDoL(&self) -> &ColumnData {
-&self.columns[1]
+pub fn BonusDoL(&self) -> [&ColumnData; 2] {
+[&self.columns[2],&self.columns[3],]
 }
-pub fn BonusFisher(&self) -> &ColumnData {
-&self.columns[2]
+pub fn BonusFisher(&self) -> [&ColumnData; 2] {
+[&self.columns[4],&self.columns[5],]
 }
 }

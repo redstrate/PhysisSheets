@@ -34,7 +34,7 @@ pub fn GatheringLog(&self) -> &ColumnData {
 pub fn FishingLog(&self) -> &ColumnData {
 &self.columns[2]
 }
-pub fn Quantity(&self) -> &ColumnData {
-&self.columns[3]
+pub fn Quantity(&self) -> [&ColumnData; 5] {
+[&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],]
 }
 }

@@ -25,10 +25,10 @@ pub struct GatheringRarePopTimeTableRow {
 columns: Vec<ColumnData>,
 }
 impl GatheringRarePopTimeTableRow {
-pub fn StartTime(&self) -> &ColumnData {
-&self.columns[0]
+pub fn StartTime(&self) -> [&ColumnData; 3] {
+[&self.columns[0],&self.columns[1],&self.columns[2],]
 }
-pub fn Duration(&self) -> &ColumnData {
-&self.columns[1]
+pub fn Duration(&self) -> [&ColumnData; 3] {
+[&self.columns[3],&self.columns[4],&self.columns[5],]
 }
 }

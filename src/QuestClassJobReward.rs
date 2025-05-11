@@ -25,67 +25,67 @@ pub struct QuestClassJobRewardRow {
 columns: Vec<ColumnData>,
 }
 impl QuestClassJobRewardRow {
-pub fn RewardItem(&self) -> &ColumnData {
-&self.columns[0]
+pub fn RewardItem(&self) -> [&ColumnData; 4] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],]
 }
-pub fn RequiredItem(&self) -> &ColumnData {
-&self.columns[1]
+pub fn RequiredItem(&self) -> [&ColumnData; 4] {
+[&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],]
 }
 pub fn Unknown8(&self) -> &ColumnData {
-&self.columns[2]
-}
-pub fn Unknown9(&self) -> &ColumnData {
-&self.columns[3]
-}
-pub fn ClassJobCategory(&self) -> &ColumnData {
-&self.columns[4]
-}
-pub fn RewardAmount(&self) -> &ColumnData {
-&self.columns[5]
-}
-pub fn RequiredAmount(&self) -> &ColumnData {
-&self.columns[6]
-}
-pub fn Unknown10(&self) -> &ColumnData {
-&self.columns[7]
-}
-pub fn Unknown11(&self) -> &ColumnData {
 &self.columns[8]
 }
-pub fn Unknown0(&self) -> &ColumnData {
+pub fn Unknown9(&self) -> &ColumnData {
 &self.columns[9]
 }
-pub fn Unknown1(&self) -> &ColumnData {
+pub fn ClassJobCategory(&self) -> &ColumnData {
 &self.columns[10]
 }
-pub fn Unknown2(&self) -> &ColumnData {
-&self.columns[11]
+pub fn RewardAmount(&self) -> [&ColumnData; 4] {
+[&self.columns[11],&self.columns[12],&self.columns[13],&self.columns[14],]
 }
-pub fn Unknown3(&self) -> &ColumnData {
-&self.columns[12]
+pub fn RequiredAmount(&self) -> [&ColumnData; 4] {
+[&self.columns[15],&self.columns[16],&self.columns[17],&self.columns[18],]
 }
-pub fn Unknown4(&self) -> &ColumnData {
-&self.columns[13]
-}
-pub fn Unknown5(&self) -> &ColumnData {
-&self.columns[14]
-}
-pub fn Unknown6(&self) -> &ColumnData {
-&self.columns[15]
-}
-pub fn Unknown7(&self) -> &ColumnData {
-&self.columns[16]
-}
-pub fn Unknown12(&self) -> &ColumnData {
-&self.columns[17]
-}
-pub fn Unknown13(&self) -> &ColumnData {
-&self.columns[18]
-}
-pub fn Unknown14(&self) -> &ColumnData {
+pub fn Unknown10(&self) -> &ColumnData {
 &self.columns[19]
 }
-pub fn Unknown15(&self) -> &ColumnData {
+pub fn Unknown11(&self) -> &ColumnData {
 &self.columns[20]
+}
+pub fn Unknown0(&self) -> &ColumnData {
+&self.columns[21]
+}
+pub fn Unknown1(&self) -> &ColumnData {
+&self.columns[22]
+}
+pub fn Unknown2(&self) -> &ColumnData {
+&self.columns[23]
+}
+pub fn Unknown3(&self) -> &ColumnData {
+&self.columns[24]
+}
+pub fn Unknown4(&self) -> &ColumnData {
+&self.columns[25]
+}
+pub fn Unknown5(&self) -> &ColumnData {
+&self.columns[26]
+}
+pub fn Unknown6(&self) -> &ColumnData {
+&self.columns[27]
+}
+pub fn Unknown7(&self) -> &ColumnData {
+&self.columns[28]
+}
+pub fn Unknown12(&self) -> &ColumnData {
+&self.columns[29]
+}
+pub fn Unknown13(&self) -> &ColumnData {
+&self.columns[30]
+}
+pub fn Unknown14(&self) -> &ColumnData {
+&self.columns[31]
+}
+pub fn Unknown15(&self) -> &ColumnData {
+&self.columns[32]
 }
 }

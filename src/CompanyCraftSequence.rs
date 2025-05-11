@@ -43,7 +43,7 @@ pub fn CompanyCraftType(&self) -> &ColumnData {
 pub fn CompanyCraftDraft(&self) -> &ColumnData {
 &self.columns[5]
 }
-pub fn CompanyCraftPart(&self) -> &ColumnData {
-&self.columns[6]
+pub fn CompanyCraftPart(&self) -> [&ColumnData; 8] {
+[&self.columns[6],&self.columns[7],&self.columns[8],&self.columns[9],&self.columns[10],&self.columns[11],&self.columns[12],&self.columns[13],]
 }
 }

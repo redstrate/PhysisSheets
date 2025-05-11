@@ -25,19 +25,19 @@ pub struct HowToPageRow {
 columns: Vec<ColumnData>,
 }
 impl HowToPageRow {
-pub fn Text(&self) -> &ColumnData {
-&self.columns[0]
+pub fn Text(&self) -> [&ColumnData; 3] {
+[&self.columns[0],&self.columns[1],&self.columns[2],]
 }
 pub fn Image(&self) -> &ColumnData {
-&self.columns[1]
-}
-pub fn Type(&self) -> &ColumnData {
-&self.columns[2]
-}
-pub fn IconType(&self) -> &ColumnData {
 &self.columns[3]
 }
-pub fn TextType(&self) -> &ColumnData {
+pub fn Type(&self) -> &ColumnData {
 &self.columns[4]
+}
+pub fn IconType(&self) -> &ColumnData {
+&self.columns[5]
+}
+pub fn TextType(&self) -> &ColumnData {
+&self.columns[6]
 }
 }

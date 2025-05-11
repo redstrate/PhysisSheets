@@ -25,13 +25,13 @@ pub struct MateriaRow {
 columns: Vec<ColumnData>,
 }
 impl MateriaRow {
-pub fn Item(&self) -> &ColumnData {
-&self.columns[0]
+pub fn Item(&self) -> [&ColumnData; 16] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],&self.columns[8],&self.columns[9],&self.columns[10],&self.columns[11],&self.columns[12],&self.columns[13],&self.columns[14],&self.columns[15],]
 }
-pub fn Value(&self) -> &ColumnData {
-&self.columns[1]
+pub fn Value(&self) -> [&ColumnData; 16] {
+[&self.columns[16],&self.columns[17],&self.columns[18],&self.columns[19],&self.columns[20],&self.columns[21],&self.columns[22],&self.columns[23],&self.columns[24],&self.columns[25],&self.columns[26],&self.columns[27],&self.columns[28],&self.columns[29],&self.columns[30],&self.columns[31],]
 }
 pub fn BaseParam(&self) -> &ColumnData {
-&self.columns[2]
+&self.columns[32]
 }
 }

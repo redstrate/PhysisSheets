@@ -34,52 +34,52 @@ pub fn Icon(&self) -> &ColumnData {
 pub fn UnlockLink(&self) -> &ColumnData {
 &self.columns[2]
 }
-pub fn SGB(&self) -> &ColumnData {
-&self.columns[3]
+pub fn SGB(&self) -> [&ColumnData; 7] {
+[&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],&self.columns[8],&self.columns[9],]
 }
-pub fn Material(&self) -> &ColumnData {
-&self.columns[4]
+pub fn Material(&self) -> [&ColumnData; 5] {
+[&self.columns[10],&self.columns[11],&self.columns[12],&self.columns[13],&self.columns[14],]
 }
 pub fn Unknown1(&self) -> &ColumnData {
-&self.columns[5]
-}
-pub fn Unknown2(&self) -> &ColumnData {
-&self.columns[6]
-}
-pub fn Unknown3(&self) -> &ColumnData {
-&self.columns[7]
-}
-pub fn Unknown4(&self) -> &ColumnData {
-&self.columns[8]
-}
-pub fn Unknown5(&self) -> &ColumnData {
-&self.columns[9]
-}
-pub fn Unknown6(&self) -> &ColumnData {
-&self.columns[10]
-}
-pub fn Unknown7(&self) -> &ColumnData {
-&self.columns[11]
-}
-pub fn Unknown8(&self) -> &ColumnData {
-&self.columns[12]
-}
-pub fn Unknown9(&self) -> &ColumnData {
-&self.columns[13]
-}
-pub fn Unknown10(&self) -> &ColumnData {
-&self.columns[14]
-}
-pub fn Unknown11(&self) -> &ColumnData {
 &self.columns[15]
 }
-pub fn Unknown12(&self) -> &ColumnData {
+pub fn Unknown2(&self) -> &ColumnData {
 &self.columns[16]
 }
-pub fn Unknown13(&self) -> &ColumnData {
+pub fn Unknown3(&self) -> &ColumnData {
 &self.columns[17]
 }
-pub fn Amount(&self) -> &ColumnData {
+pub fn Unknown4(&self) -> &ColumnData {
 &self.columns[18]
+}
+pub fn Unknown5(&self) -> &ColumnData {
+&self.columns[19]
+}
+pub fn Unknown6(&self) -> &ColumnData {
+&self.columns[20]
+}
+pub fn Unknown7(&self) -> &ColumnData {
+&self.columns[21]
+}
+pub fn Unknown8(&self) -> &ColumnData {
+&self.columns[22]
+}
+pub fn Unknown9(&self) -> &ColumnData {
+&self.columns[23]
+}
+pub fn Unknown10(&self) -> &ColumnData {
+&self.columns[24]
+}
+pub fn Unknown11(&self) -> &ColumnData {
+&self.columns[25]
+}
+pub fn Unknown12(&self) -> &ColumnData {
+&self.columns[26]
+}
+pub fn Unknown13(&self) -> &ColumnData {
+&self.columns[27]
+}
+pub fn Amount(&self) -> [&ColumnData; 5] {
+[&self.columns[28],&self.columns[29],&self.columns[30],&self.columns[31],&self.columns[32],]
 }
 }

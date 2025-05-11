@@ -25,25 +25,25 @@ pub struct CharaMakeTypeRow {
 columns: Vec<ColumnData>,
 }
 impl CharaMakeTypeRow {
-pub fn CharaMakeStruct(&self) -> &ColumnData {
-&self.columns[0]
+pub fn CharaMakeStruct(&self) -> [&ColumnData; 28] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],&self.columns[8],&self.columns[9],&self.columns[10],&self.columns[11],&self.columns[12],&self.columns[13],&self.columns[14],&self.columns[15],&self.columns[16],&self.columns[17],&self.columns[18],&self.columns[19],&self.columns[20],&self.columns[21],&self.columns[22],&self.columns[23],&self.columns[24],&self.columns[25],&self.columns[26],&self.columns[27],]
 }
-pub fn VoiceStruct(&self) -> &ColumnData {
-&self.columns[1]
+pub fn VoiceStruct(&self) -> [&ColumnData; 12] {
+[&self.columns[28],&self.columns[29],&self.columns[30],&self.columns[31],&self.columns[32],&self.columns[33],&self.columns[34],&self.columns[35],&self.columns[36],&self.columns[37],&self.columns[38],&self.columns[39],]
 }
-pub fn FacialFeatureOption(&self) -> &ColumnData {
-&self.columns[2]
+pub fn FacialFeatureOption(&self) -> [&ColumnData; 8] {
+[&self.columns[40],&self.columns[41],&self.columns[42],&self.columns[43],&self.columns[44],&self.columns[45],&self.columns[46],&self.columns[47],]
 }
-pub fn Equipment(&self) -> &ColumnData {
-&self.columns[3]
+pub fn Equipment(&self) -> [&ColumnData; 3] {
+[&self.columns[48],&self.columns[49],&self.columns[50],]
 }
 pub fn Race(&self) -> &ColumnData {
-&self.columns[4]
+&self.columns[51]
 }
 pub fn Tribe(&self) -> &ColumnData {
-&self.columns[5]
+&self.columns[52]
 }
 pub fn Gender(&self) -> &ColumnData {
-&self.columns[6]
+&self.columns[53]
 }
 }

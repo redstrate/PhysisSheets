@@ -28,49 +28,49 @@ impl PetRow {
 pub fn Name(&self) -> &ColumnData {
 &self.columns[0]
 }
-pub fn Abilities(&self) -> &ColumnData {
-&self.columns[1]
+pub fn Abilities(&self) -> [&ColumnData; 4] {
+[&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],]
 }
 pub fn AutoAction(&self) -> &ColumnData {
-&self.columns[2]
-}
-pub fn SmallScalePercentage(&self) -> &ColumnData {
-&self.columns[3]
-}
-pub fn MediumScalePercentage(&self) -> &ColumnData {
-&self.columns[4]
-}
-pub fn LargeScalePercentage(&self) -> &ColumnData {
 &self.columns[5]
 }
-pub fn Unknown8(&self) -> &ColumnData {
+pub fn SmallScalePercentage(&self) -> &ColumnData {
 &self.columns[6]
 }
-pub fn Unknown9(&self) -> &ColumnData {
+pub fn MediumScalePercentage(&self) -> &ColumnData {
 &self.columns[7]
 }
-pub fn Unknown10(&self) -> &ColumnData {
+pub fn LargeScalePercentage(&self) -> &ColumnData {
 &self.columns[8]
 }
-pub fn Unknown11(&self) -> &ColumnData {
+pub fn Unknown8(&self) -> &ColumnData {
 &self.columns[9]
 }
-pub fn Unknown12(&self) -> &ColumnData {
+pub fn Unknown9(&self) -> &ColumnData {
 &self.columns[10]
 }
-pub fn Unknown13(&self) -> &ColumnData {
+pub fn Unknown10(&self) -> &ColumnData {
 &self.columns[11]
 }
-pub fn Unknown14(&self) -> &ColumnData {
+pub fn Unknown11(&self) -> &ColumnData {
 &self.columns[12]
 }
-pub fn Unknown15(&self) -> &ColumnData {
+pub fn Unknown12(&self) -> &ColumnData {
 &self.columns[13]
 }
-pub fn NonCombatSummon(&self) -> &ColumnData {
+pub fn Unknown13(&self) -> &ColumnData {
 &self.columns[14]
 }
-pub fn Unknown17(&self) -> &ColumnData {
+pub fn Unknown14(&self) -> &ColumnData {
 &self.columns[15]
+}
+pub fn Unknown15(&self) -> &ColumnData {
+&self.columns[16]
+}
+pub fn NonCombatSummon(&self) -> &ColumnData {
+&self.columns[17]
+}
+pub fn Unknown17(&self) -> &ColumnData {
+&self.columns[18]
 }
 }

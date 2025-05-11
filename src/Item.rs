@@ -82,160 +82,160 @@ pub fn DefensePhys(&self) -> &ColumnData {
 pub fn DefenseMag(&self) -> &ColumnData {
 &self.columns[18]
 }
-pub fn BaseParamValue(&self) -> &ColumnData {
-&self.columns[19]
+pub fn BaseParamValue(&self) -> [&ColumnData; 6] {
+[&self.columns[19],&self.columns[20],&self.columns[21],&self.columns[22],&self.columns[23],&self.columns[24],]
 }
-pub fn BaseParamValueSpecial(&self) -> &ColumnData {
-&self.columns[20]
+pub fn BaseParamValueSpecial(&self) -> [&ColumnData; 6] {
+[&self.columns[25],&self.columns[26],&self.columns[27],&self.columns[28],&self.columns[29],&self.columns[30],]
 }
 pub fn LevelEquip(&self) -> &ColumnData {
-&self.columns[21]
-}
-pub fn RequiredPvpRank(&self) -> &ColumnData {
-&self.columns[22]
-}
-pub fn EquipRestriction(&self) -> &ColumnData {
-&self.columns[23]
-}
-pub fn ClassJobCategory(&self) -> &ColumnData {
-&self.columns[24]
-}
-pub fn GrandCompany(&self) -> &ColumnData {
-&self.columns[25]
-}
-pub fn ItemSeries(&self) -> &ColumnData {
-&self.columns[26]
-}
-pub fn BaseParamModifier(&self) -> &ColumnData {
-&self.columns[27]
-}
-pub fn ClassJobUse(&self) -> &ColumnData {
-&self.columns[28]
-}
-pub fn Unknown2(&self) -> &ColumnData {
-&self.columns[29]
-}
-pub fn Unknown3(&self) -> &ColumnData {
-&self.columns[30]
-}
-pub fn BaseParam(&self) -> &ColumnData {
 &self.columns[31]
 }
-pub fn ItemSpecialBonus(&self) -> &ColumnData {
+pub fn RequiredPvpRank(&self) -> &ColumnData {
 &self.columns[32]
 }
-pub fn ItemSpecialBonusParam(&self) -> &ColumnData {
+pub fn EquipRestriction(&self) -> &ColumnData {
 &self.columns[33]
 }
-pub fn BaseParamSpecial(&self) -> &ColumnData {
+pub fn ClassJobCategory(&self) -> &ColumnData {
 &self.columns[34]
 }
-pub fn MaterializeType(&self) -> &ColumnData {
+pub fn GrandCompany(&self) -> &ColumnData {
 &self.columns[35]
 }
-pub fn MateriaSlotCount(&self) -> &ColumnData {
+pub fn ItemSeries(&self) -> &ColumnData {
 &self.columns[36]
 }
-pub fn SubStatCategory(&self) -> &ColumnData {
+pub fn BaseParamModifier(&self) -> &ColumnData {
 &self.columns[37]
 }
-pub fn IsAdvancedMeldingPermitted(&self) -> &ColumnData {
+pub fn ClassJobUse(&self) -> &ColumnData {
 &self.columns[38]
 }
-pub fn IsPvP(&self) -> &ColumnData {
+pub fn Unknown2(&self) -> &ColumnData {
 &self.columns[39]
 }
-pub fn IsGlamorous(&self) -> &ColumnData {
+pub fn Unknown3(&self) -> &ColumnData {
 &self.columns[40]
 }
-pub fn AdditionalData(&self) -> &ColumnData {
-&self.columns[41]
+pub fn BaseParam(&self) -> [&ColumnData; 6] {
+[&self.columns[41],&self.columns[42],&self.columns[43],&self.columns[44],&self.columns[45],&self.columns[46],]
 }
-pub fn StackSize(&self) -> &ColumnData {
-&self.columns[42]
-}
-pub fn PriceMid(&self) -> &ColumnData {
-&self.columns[43]
-}
-pub fn PriceLow(&self) -> &ColumnData {
-&self.columns[44]
-}
-pub fn ItemRepair(&self) -> &ColumnData {
-&self.columns[45]
-}
-pub fn ItemGlamour(&self) -> &ColumnData {
-&self.columns[46]
-}
-pub fn Icon(&self) -> &ColumnData {
+pub fn ItemSpecialBonus(&self) -> &ColumnData {
 &self.columns[47]
 }
-pub fn LevelItem(&self) -> &ColumnData {
+pub fn ItemSpecialBonusParam(&self) -> &ColumnData {
 &self.columns[48]
 }
-pub fn Unknown4(&self) -> &ColumnData {
-&self.columns[49]
+pub fn BaseParamSpecial(&self) -> [&ColumnData; 6] {
+[&self.columns[49],&self.columns[50],&self.columns[51],&self.columns[52],&self.columns[53],&self.columns[54],]
 }
-pub fn ItemAction(&self) -> &ColumnData {
-&self.columns[50]
-}
-pub fn Cooldowns(&self) -> &ColumnData {
-&self.columns[51]
-}
-pub fn Desynth(&self) -> &ColumnData {
-&self.columns[52]
-}
-pub fn AetherialReduce(&self) -> &ColumnData {
-&self.columns[53]
-}
-pub fn Rarity(&self) -> &ColumnData {
-&self.columns[54]
-}
-pub fn FilterGroup(&self) -> &ColumnData {
+pub fn MaterializeType(&self) -> &ColumnData {
 &self.columns[55]
 }
-pub fn ItemUICategory(&self) -> &ColumnData {
+pub fn MateriaSlotCount(&self) -> &ColumnData {
 &self.columns[56]
 }
-pub fn ItemSearchCategory(&self) -> &ColumnData {
+pub fn SubStatCategory(&self) -> &ColumnData {
 &self.columns[57]
 }
-pub fn EquipSlotCategory(&self) -> &ColumnData {
+pub fn IsAdvancedMeldingPermitted(&self) -> &ColumnData {
 &self.columns[58]
 }
-pub fn ItemSortCategory(&self) -> &ColumnData {
+pub fn IsPvP(&self) -> &ColumnData {
 &self.columns[59]
 }
-pub fn DyeCount(&self) -> &ColumnData {
+pub fn IsGlamorous(&self) -> &ColumnData {
 &self.columns[60]
 }
-pub fn CastTimeSeconds(&self) -> &ColumnData {
+pub fn AdditionalData(&self) -> &ColumnData {
 &self.columns[61]
 }
-pub fn ClassJobRepair(&self) -> &ColumnData {
+pub fn StackSize(&self) -> &ColumnData {
 &self.columns[62]
 }
-pub fn IsUnique(&self) -> &ColumnData {
+pub fn PriceMid(&self) -> &ColumnData {
 &self.columns[63]
 }
-pub fn IsUntradable(&self) -> &ColumnData {
+pub fn PriceLow(&self) -> &ColumnData {
 &self.columns[64]
 }
-pub fn IsIndisposable(&self) -> &ColumnData {
+pub fn ItemRepair(&self) -> &ColumnData {
 &self.columns[65]
 }
-pub fn Lot(&self) -> &ColumnData {
+pub fn ItemGlamour(&self) -> &ColumnData {
 &self.columns[66]
 }
-pub fn CanBeHq(&self) -> &ColumnData {
+pub fn Icon(&self) -> &ColumnData {
 &self.columns[67]
 }
-pub fn IsCrestWorthy(&self) -> &ColumnData {
+pub fn LevelItem(&self) -> &ColumnData {
 &self.columns[68]
 }
-pub fn IsCollectable(&self) -> &ColumnData {
+pub fn Unknown4(&self) -> &ColumnData {
 &self.columns[69]
 }
-pub fn AlwaysCollectable(&self) -> &ColumnData {
+pub fn ItemAction(&self) -> &ColumnData {
 &self.columns[70]
+}
+pub fn Cooldowns(&self) -> &ColumnData {
+&self.columns[71]
+}
+pub fn Desynth(&self) -> &ColumnData {
+&self.columns[72]
+}
+pub fn AetherialReduce(&self) -> &ColumnData {
+&self.columns[73]
+}
+pub fn Rarity(&self) -> &ColumnData {
+&self.columns[74]
+}
+pub fn FilterGroup(&self) -> &ColumnData {
+&self.columns[75]
+}
+pub fn ItemUICategory(&self) -> &ColumnData {
+&self.columns[76]
+}
+pub fn ItemSearchCategory(&self) -> &ColumnData {
+&self.columns[77]
+}
+pub fn EquipSlotCategory(&self) -> &ColumnData {
+&self.columns[78]
+}
+pub fn ItemSortCategory(&self) -> &ColumnData {
+&self.columns[79]
+}
+pub fn DyeCount(&self) -> &ColumnData {
+&self.columns[80]
+}
+pub fn CastTimeSeconds(&self) -> &ColumnData {
+&self.columns[81]
+}
+pub fn ClassJobRepair(&self) -> &ColumnData {
+&self.columns[82]
+}
+pub fn IsUnique(&self) -> &ColumnData {
+&self.columns[83]
+}
+pub fn IsUntradable(&self) -> &ColumnData {
+&self.columns[84]
+}
+pub fn IsIndisposable(&self) -> &ColumnData {
+&self.columns[85]
+}
+pub fn Lot(&self) -> &ColumnData {
+&self.columns[86]
+}
+pub fn CanBeHq(&self) -> &ColumnData {
+&self.columns[87]
+}
+pub fn IsCrestWorthy(&self) -> &ColumnData {
+&self.columns[88]
+}
+pub fn IsCollectable(&self) -> &ColumnData {
+&self.columns[89]
+}
+pub fn AlwaysCollectable(&self) -> &ColumnData {
+&self.columns[90]
 }
 }

@@ -25,16 +25,16 @@ pub struct CompanyCraftPartRow {
 columns: Vec<ColumnData>,
 }
 impl CompanyCraftPartRow {
-pub fn CompanyCraftProcess(&self) -> &ColumnData {
-&self.columns[0]
+pub fn CompanyCraftProcess(&self) -> [&ColumnData; 3] {
+[&self.columns[0],&self.columns[1],&self.columns[2],]
 }
 pub fn Unknown0(&self) -> &ColumnData {
-&self.columns[1]
+&self.columns[3]
 }
 pub fn Unknown1(&self) -> &ColumnData {
-&self.columns[2]
+&self.columns[4]
 }
 pub fn CompanyCraftType(&self) -> &ColumnData {
-&self.columns[3]
+&self.columns[5]
 }
 }

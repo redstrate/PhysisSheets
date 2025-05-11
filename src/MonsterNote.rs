@@ -31,10 +31,10 @@ pub fn Name(&self) -> &ColumnData {
 pub fn Reward(&self) -> &ColumnData {
 &self.columns[1]
 }
-pub fn MonsterNoteTarget(&self) -> &ColumnData {
-&self.columns[2]
+pub fn MonsterNoteTarget(&self) -> [&ColumnData; 4] {
+[&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],]
 }
-pub fn Count(&self) -> &ColumnData {
-&self.columns[3]
+pub fn Count(&self) -> [&ColumnData; 4] {
+[&self.columns[6],&self.columns[7],&self.columns[8],&self.columns[9],]
 }
 }

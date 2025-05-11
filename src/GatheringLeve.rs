@@ -25,31 +25,31 @@ pub struct GatheringLeveRow {
 columns: Vec<ColumnData>,
 }
 impl GatheringLeveRow {
-pub fn Route(&self) -> &ColumnData {
-&self.columns[0]
+pub fn Route(&self) -> [&ColumnData; 4] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],]
 }
-pub fn RequiredItem(&self) -> &ColumnData {
-&self.columns[1]
+pub fn RequiredItem(&self) -> [&ColumnData; 4] {
+[&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],]
 }
 pub fn Rule(&self) -> &ColumnData {
-&self.columns[2]
+&self.columns[8]
 }
 pub fn BNpcEntry(&self) -> &ColumnData {
-&self.columns[3]
+&self.columns[9]
 }
-pub fn Objective(&self) -> &ColumnData {
-&self.columns[4]
+pub fn Objective(&self) -> [&ColumnData; 2] {
+[&self.columns[10],&self.columns[11],]
 }
-pub fn RequiredItemQuantity(&self) -> &ColumnData {
-&self.columns[5]
+pub fn RequiredItemQuantity(&self) -> [&ColumnData; 4] {
+[&self.columns[12],&self.columns[13],&self.columns[14],&self.columns[15],]
 }
 pub fn ItemNumber(&self) -> &ColumnData {
-&self.columns[6]
+&self.columns[16]
 }
 pub fn Varient(&self) -> &ColumnData {
-&self.columns[7]
+&self.columns[17]
 }
 pub fn UseSecondaryTool(&self) -> &ColumnData {
-&self.columns[8]
+&self.columns[18]
 }
 }

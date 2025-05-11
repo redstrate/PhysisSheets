@@ -31,10 +31,10 @@ pub fn MeldFee(&self) -> &ColumnData {
 pub fn ReturnRate(&self) -> &ColumnData {
 &self.columns[1]
 }
-pub fn OvermeldNQPercent(&self) -> &ColumnData {
-&self.columns[2]
+pub fn OvermeldNQPercent(&self) -> [&ColumnData; 4] {
+[&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],]
 }
-pub fn OvermeldHQPercent(&self) -> &ColumnData {
-&self.columns[3]
+pub fn OvermeldHQPercent(&self) -> [&ColumnData; 4] {
+[&self.columns[6],&self.columns[7],&self.columns[8],&self.columns[9],]
 }
 }

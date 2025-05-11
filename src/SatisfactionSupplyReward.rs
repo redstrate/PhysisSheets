@@ -25,31 +25,31 @@ pub struct SatisfactionSupplyRewardRow {
 columns: Vec<ColumnData>,
 }
 impl SatisfactionSupplyRewardRow {
-pub fn SatisfactionSupplyRewardData(&self) -> &ColumnData {
-&self.columns[0]
+pub fn SatisfactionSupplyRewardData(&self) -> [&ColumnData; 2] {
+[&self.columns[0],&self.columns[1],]
 }
 pub fn SatisfactionLow(&self) -> &ColumnData {
-&self.columns[1]
-}
-pub fn SatisfactionMid(&self) -> &ColumnData {
 &self.columns[2]
 }
-pub fn SatisfactionHigh(&self) -> &ColumnData {
+pub fn SatisfactionMid(&self) -> &ColumnData {
 &self.columns[3]
 }
-pub fn GilLow(&self) -> &ColumnData {
+pub fn SatisfactionHigh(&self) -> &ColumnData {
 &self.columns[4]
 }
-pub fn GilMid(&self) -> &ColumnData {
+pub fn GilLow(&self) -> &ColumnData {
 &self.columns[5]
 }
-pub fn GilHigh(&self) -> &ColumnData {
+pub fn GilMid(&self) -> &ColumnData {
 &self.columns[6]
 }
-pub fn BonusMultiplier(&self) -> &ColumnData {
+pub fn GilHigh(&self) -> &ColumnData {
 &self.columns[7]
 }
-pub fn MinLevelForSecondReward(&self) -> &ColumnData {
+pub fn BonusMultiplier(&self) -> &ColumnData {
 &self.columns[8]
+}
+pub fn MinLevelForSecondReward(&self) -> &ColumnData {
+&self.columns[9]
 }
 }

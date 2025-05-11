@@ -25,7 +25,7 @@ pub struct DeepDungeonRoomRow {
 columns: Vec<ColumnData>,
 }
 impl DeepDungeonRoomRow {
-pub fn Level(&self) -> &ColumnData {
-&self.columns[0]
+pub fn Level(&self) -> [&ColumnData; 5] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],]
 }
 }

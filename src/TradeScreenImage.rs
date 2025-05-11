@@ -25,16 +25,16 @@ pub struct TradeScreenImageRow {
 columns: Vec<ColumnData>,
 }
 impl TradeScreenImageRow {
-pub fn Items(&self) -> &ColumnData {
-&self.columns[0]
+pub fn Items(&self) -> [&ColumnData; 2] {
+[&self.columns[0],&self.columns[1],]
 }
-pub fn ItemIcons(&self) -> &ColumnData {
-&self.columns[1]
+pub fn ItemIcons(&self) -> [&ColumnData; 2] {
+[&self.columns[2],&self.columns[3],]
 }
-pub fn ItemValues(&self) -> &ColumnData {
-&self.columns[2]
+pub fn ItemValues(&self) -> [&ColumnData; 2] {
+[&self.columns[4],&self.columns[5],]
 }
 pub fn BannerType(&self) -> &ColumnData {
-&self.columns[3]
+&self.columns[6]
 }
 }

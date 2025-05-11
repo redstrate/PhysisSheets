@@ -25,40 +25,40 @@ pub struct PartyContentRow {
 columns: Vec<ColumnData>,
 }
 impl PartyContentRow {
-pub fn LGBEventObject(&self) -> &ColumnData {
-&self.columns[0]
+pub fn LGBEventObject(&self) -> [&ColumnData; 9] {
+[&self.columns[0],&self.columns[1],&self.columns[2],&self.columns[3],&self.columns[4],&self.columns[5],&self.columns[6],&self.columns[7],&self.columns[8],]
 }
-pub fn LGBEventRange(&self) -> &ColumnData {
-&self.columns[1]
+pub fn LGBEventRange(&self) -> [&ColumnData; 9] {
+[&self.columns[9],&self.columns[10],&self.columns[11],&self.columns[12],&self.columns[13],&self.columns[14],&self.columns[15],&self.columns[16],&self.columns[17],]
 }
-pub fn LGBEventObject2(&self) -> &ColumnData {
-&self.columns[2]
+pub fn LGBEventObject2(&self) -> [&ColumnData; 9] {
+[&self.columns[18],&self.columns[19],&self.columns[20],&self.columns[21],&self.columns[22],&self.columns[23],&self.columns[24],&self.columns[25],&self.columns[26],]
 }
 pub fn TextDataStart(&self) -> &ColumnData {
-&self.columns[3]
+&self.columns[27]
 }
 pub fn TextDataEnd(&self) -> &ColumnData {
-&self.columns[4]
+&self.columns[28]
 }
 pub fn Image(&self) -> &ColumnData {
-&self.columns[5]
+&self.columns[29]
 }
 pub fn TimeLimit(&self) -> &ColumnData {
-&self.columns[6]
+&self.columns[30]
 }
 pub fn Unknown0(&self) -> &ColumnData {
-&self.columns[7]
+&self.columns[31]
 }
 pub fn ContentFinderCondition(&self) -> &ColumnData {
-&self.columns[8]
+&self.columns[32]
 }
 pub fn Key(&self) -> &ColumnData {
-&self.columns[9]
+&self.columns[33]
 }
 pub fn Unknown1(&self) -> &ColumnData {
-&self.columns[10]
+&self.columns[34]
 }
 pub fn Name(&self) -> &ColumnData {
-&self.columns[11]
+&self.columns[35]
 }
 }

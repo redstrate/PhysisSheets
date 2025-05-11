@@ -25,25 +25,25 @@ pub struct ItemFoodRow {
 columns: Vec<ColumnData>,
 }
 impl ItemFoodRow {
-pub fn Max(&self) -> &ColumnData {
-&self.columns[0]
+pub fn Max(&self) -> [&ColumnData; 3] {
+[&self.columns[0],&self.columns[1],&self.columns[2],]
 }
-pub fn MaxHQ(&self) -> &ColumnData {
-&self.columns[1]
+pub fn MaxHQ(&self) -> [&ColumnData; 3] {
+[&self.columns[3],&self.columns[4],&self.columns[5],]
 }
 pub fn EXPBonusPercent(&self) -> &ColumnData {
-&self.columns[2]
-}
-pub fn BaseParam(&self) -> &ColumnData {
-&self.columns[3]
-}
-pub fn Value(&self) -> &ColumnData {
-&self.columns[4]
-}
-pub fn ValueHQ(&self) -> &ColumnData {
-&self.columns[5]
-}
-pub fn IsRelative(&self) -> &ColumnData {
 &self.columns[6]
+}
+pub fn BaseParam(&self) -> [&ColumnData; 3] {
+[&self.columns[7],&self.columns[8],&self.columns[9],]
+}
+pub fn Value(&self) -> [&ColumnData; 3] {
+[&self.columns[10],&self.columns[11],&self.columns[12],]
+}
+pub fn ValueHQ(&self) -> [&ColumnData; 3] {
+[&self.columns[13],&self.columns[14],&self.columns[15],]
+}
+pub fn IsRelative(&self) -> [&ColumnData; 3] {
+[&self.columns[16],&self.columns[17],&self.columns[18],]
 }
 }

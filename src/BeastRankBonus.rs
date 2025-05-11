@@ -52,7 +52,7 @@ pub fn Sworn(&self) -> &ColumnData {
 pub fn AlliedBloodsworn(&self) -> &ColumnData {
 &self.columns[8]
 }
-pub fn ItemQuantity(&self) -> &ColumnData {
-&self.columns[9]
+pub fn ItemQuantity(&self) -> [&ColumnData; 8] {
+[&self.columns[9],&self.columns[10],&self.columns[11],&self.columns[12],&self.columns[13],&self.columns[14],&self.columns[15],&self.columns[16],]
 }
 }
